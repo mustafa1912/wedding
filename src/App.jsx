@@ -1,12 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 
-
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-
-
-
 import Footer from './layout/Footer';
 import Header from './layout/Header';
 
@@ -23,9 +17,9 @@ function App() {
       <div className="page-wrapper layout-full box-style-none">
         <Header api={api} />
         <Routes>
+          <Route path='/portfolio' element={<Portfolio api={api} />}></Route>
           <Route path='' element={<Home api={api} />}></Route>
           <Route path='/contact' element={<Contact api={api} />}></Route>
-          <Route path='/portfolio' element={<Portfolio api={api} />}></Route>
           <Route path='/about' element={<About api={api} />}></Route>
           <Route path='/price' element={<Price api={api} />}></Route>
         </Routes>

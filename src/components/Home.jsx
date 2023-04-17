@@ -13,6 +13,7 @@ function Home(api) {
     const [slider, setSlider] = useState([])
     const [portfolio, setPortfolio] = useState([])
     const [price, setPrice] = useState([])
+    const [priceDescription, setPriceDescription] = useState([])
     const [client, setClient] = useState([])
     const [team, setTeam] = useState([])
 
@@ -42,7 +43,19 @@ function Home(api) {
             .then(function (response) {
                 // handle success
                 setPrice(response.data)
-                console.log(price)
+
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+        // price description
+        axios.get(`${api.api}/api/description`)
+            .then(function (response) {
+                // handle success
+                setPriceDescription(response.data)
+                console.log(priceDescription)
+                console.log(priceDescription)
             })
             .catch(function (error) {
                 // handle error
@@ -70,8 +83,9 @@ function Home(api) {
             })
     }, [])
 
+
     const options_reviews = {
-        margin: 30,
+        // margin: 30,
         responsiveClass: true,
         nav: false,
         autoplay: true,
@@ -124,7 +138,7 @@ function Home(api) {
                                                     <div className='item' key={index}>
                                                         <div className="container">
                                                             <div className="row align-items-center">
-                                                                <div className="col-lg-5 col-md-12 col-12 pt-5">
+                                                                <div className="col-lg-5 col-md-12 col-12 pt-5 pb-5">
                                                                     <div className="wpo-about-wrap">
                                                                         <div className="wpo-about-item">
                                                                             <div className="wpo-about-img">
@@ -161,7 +175,7 @@ function Home(api) {
                                                                         <div className="ab-shape">
                                                                             <img
                                                                                 decoding="async"
-                                                                                src="./images/about-shape.png"
+                                                                                src="./images/IMG_20230416_210803_516.png"
                                                                                 alt=""
                                                                             />
                                                                         </div>
@@ -170,15 +184,14 @@ function Home(api) {
                                                                 <div className="col-lg-7 col-md-12 col-12">
                                                                     <div className="wpo-about-text">
                                                                         <div className="wpo-about-icon">
-
                                                                         </div>
                                                                         <div className="wpo-about-icon-content">
                                                                             <h2> {Element.address} </h2>
                                                                             <p>
                                                                                 {Element.notes}
                                                                             </p>
-                                                                            <div className="d-flex justify-content-center">
-                                                                                <NavLink to="/about" className="theme-btn-s3">
+                                                                            <div className="d-flex justify-content-center" style={{ marginRight: '30px' }}>
+                                                                                <NavLink to="/about" className="theme-btn-s3" >
                                                                                     More About
                                                                                 </NavLink>
                                                                             </div>
@@ -199,7 +212,7 @@ function Home(api) {
                 </section>
                 {/* Wedding Ceremony */}
                 <section
-                    className="section-padding pt-3 elementor-section elementor-top-section elementor-element elementor-element-3883d4e elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                    className="section-padding pt-3 elementor-section elementor-top-section elementor-element elementor-element-3883d4e elementor-section-full_width elementor-section-height-default elementor-section-height-default my-3"
                     data-id="3883d4e"
                     data-element_type="section">
                     <div className="elementor-container elementor-column-gap-no bg-section">
@@ -212,7 +225,7 @@ function Home(api) {
                                     className="elementor-element elementor-element-33eef22 elementor-widget elementor-widget-wpo-loveme_title"
                                     data-id="33eef22"
                                     data-element_type="widget"
-                                    data-settings='{"shape_image":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/section-title.png","id":342,"size":"","alt":"","source":"library"}}'
+                                    data-settings='{"shape_image":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/preloader.png","id":342,"size":"","alt":"","source":"library"}}'
                                     data-widget_type="wpo-loveme_title.default">
                                     <div className="elementor-widget-container mt-5">
                                         <div className="wpo-section-area">
@@ -222,7 +235,7 @@ function Home(api) {
                                                 <div className="section-title-img">
                                                     <img
                                                         decoding="async"
-                                                        src="./images/section-title.png"
+                                                        src="./images/preloader.png"
                                                         alt=""
                                                     />
                                                 </div>
@@ -314,7 +327,7 @@ function Home(api) {
                                                                                 >
                                                                                     <div className="eltdf-st-inner">
                                                                                         <div
-                                                                                            className="eltdf-st-image mt-5"
+                                                                                            className="eltdf-st-image"
                                                                                         >
                                                                                             <img
                                                                                                 width="55"
@@ -330,7 +343,6 @@ function Home(api) {
                                                                                             <span
                                                                                                 className="eltdf-st-title-word"
                                                                                             >
-                                                                                                WEDDING
                                                                                             </span>
                                                                                             PACKAGES
                                                                                         </h2>
@@ -381,7 +393,7 @@ function Home(api) {
                                                                                         {price.map((Element, index) => (
                                                                                             <div
                                                                                                 className="eltdf-price-table eltdf-item-space col-sm-12 col-md-4 " key={index}>
-                                                                                                <div className="eltdf-pt-inner p-4">
+                                                                                                <div className="eltdf-pt-inner p-4 pb-1">
                                                                                                     <div className="img-price">
                                                                                                         <figure>
                                                                                                             <img
@@ -396,23 +408,21 @@ function Home(api) {
                                                                                                             <li
                                                                                                                 className="eltdf-pt-title-holder">
                                                                                                                 <span
-                                                                                                                    className="eltdf-pt-title"
-                                                                                                                >
+                                                                                                                    className="eltdf-pt-title">
                                                                                                                     {Element.name}
                                                                                                                 </span>
                                                                                                             </li>
-                                                                                                            <div className="row m-0 align-items-center">
+                                                                                                            <div className="row m-0 align-items-end mt-3">
                                                                                                                 <li
                                                                                                                     className="eltdf-pt-content col-6 pe-1">
-                                                                                                                    <ul>
-                                                                                                                        <li className="pe-0">   {Element.notes} </li>
-                                                                                                                    </ul>
-                                                                                                                    <ul>
-                                                                                                                        <li className="pe-0">   {Element.notes} </li>
-                                                                                                                    </ul>
-                                                                                                                    <ul>
-                                                                                                                        <li className="pe-0">   {Element.notes} </li>
-                                                                                                                    </ul>
+                                                                                                                    {priceDescription.map((ElementDescription, indexDescription) => (
+                                                                                                                        <React.Fragment key={indexDescription}>
+                                                                                                                            {ElementDescription.id === Element.price_id}
+                                                                                                                            <ul >
+                                                                                                                                <li className="pe-0"> {ElementDescription.notes} </li>
+                                                                                                                            </ul>
+                                                                                                                        </React.Fragment>
+                                                                                                                    ))}
                                                                                                                 </li>
                                                                                                                 <li
                                                                                                                     className="eltdf-pt-content col-6 pe-0">
@@ -440,7 +450,7 @@ function Home(api) {
                                                                                                             </div>
                                                                                                         </ul>
                                                                                                         <div className=" me-2 ms-2">
-                                                                                                            <p className='text-center p-2 mb-2'> plase check the notes show in the laste page</p>
+                                                                                                            <p className='text-center p-2 mb-0 text pb-0'> plase check the notes show in the laste page</p>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
@@ -554,7 +564,7 @@ function Home(api) {
                                                                                                                 <span
                                                                                                                     className="eltdf-st-title-word"
                                                                                                                 >
-                                                                                                                    {Element.address}
+                                                                                                                    {Element.name}
                                                                                                                 </span>
 
                                                                                                             </h2>
@@ -572,7 +582,7 @@ function Home(api) {
                                                                                                     <div
                                                                                                         className="elementor-text-editor elementor-clearfix"
                                                                                                     >
-                                                                                                        <p>
+                                                                                                        <p className="text-center">
                                                                                                             {Element.notes}
                                                                                                         </p>
                                                                                                     </div>
@@ -636,7 +646,7 @@ function Home(api) {
                                     className="elementor-element elementor-element-e120966 elementor-widget elementor-widget-wpo-loveme_title"
                                     data-id="e120966"
                                     data-element_type="widget"
-                                    data-settings='{"shape_image":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/section-title.png","id":342,"size":"","alt":"","source":"library"}}'
+                                    data-settings='{"shape_image":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/preloader.png","id":342,"size":"","alt":"","source":"library"}}'
                                     data-widget_type="wpo-loveme_title.default"
                                 >
                                     <div className="elementor-widget-container">
@@ -647,7 +657,7 @@ function Home(api) {
                                                 <div className="section-title-img">
                                                     <img
                                                         decoding="async"
-                                                        src="./images/section-title.png"
+                                                        src="./images/preloader.png"
                                                         alt=""
                                                     />
                                                 </div>
@@ -732,13 +742,13 @@ function Home(api) {
                             data-element_type="column"
                             data-settings='{"background_background":"classic"}'
                         >
-                            <div className="elementor-widget-wrap elementor-element-populated">
+                            <div className="elementor-widget-wrap elementor-element-populated contact-section">
                                 <div className="elementor-background-overlay"></div>
                                 <div
                                     className="elementor-element elementor-element-9be21ec elementor-widget elementor-widget-wpo-loveme_cta"
                                     data-id="9be21ec"
                                     data-element_type="widget"
-                                    data-settings='{"cta_image":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/section-title.png","id":342,"size":"","alt":"","source":"library"}}'
+                                    data-settings='{"cta_image":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/preloader.png","id":342,"size":"","alt":"","source":"library"}}'
                                     data-widget_type="wpo-loveme_cta.default"
                                 >
                                     <div className="elementor-widget-container">
@@ -748,7 +758,7 @@ function Home(api) {
                                                     <span>
                                                         <img
                                                             decoding="async"
-                                                            src="./images/section-title.png"
+                                                            src="./images/preloader.png"
                                                             alt=""
                                                         />
                                                     </span>

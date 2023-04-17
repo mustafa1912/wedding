@@ -36,7 +36,10 @@ function Header(api) {
                             <div className="loader-line"></div>
                         </div>
                         {companySetting.map((Element, index) => (
-                            <img src={api.api + '/storage/app/public/' + Element.image} alt={Element.name} title={Element.name} key={index} />
+                            <React.Fragment key={index}>
+                                {/*   <img src={api.api + '/storage/app/public/' + Element.image} alt={Element.name} title={Element.name} className="p-2" />  */}
+                                <img src='./images/logo.png' alt={Element.name} title={Element.name} className="p-2" />
+                            </React.Fragment>
                         ))}
                     </div>
                 </div>
@@ -67,30 +70,24 @@ function Header(api) {
                             <div className="col col-lg-5 col-md-12 col-12">
                                 <div className="contact-info">
                                     <ul className="clearfix">
-                                        <li>
-                                            <a href="https://www.facebook.com/Youhannamagdy12?mibextid=ZbWKwL" target="_blank" rel="noreferrer"><i
-                                                className="fi flaticon-facebook-app-symbol" ></i></a>
-                                        </li>
-                                        {/*  <li>
-                                            <a href="#"><i
-                                                className="fi flaticon-twitter" ></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i
-                                                className="fi flaticon-linkedin" ></i></a>
-                                        </li>*/}
-                                        <li>
-                                            <a href="https://www.instagram.com/youhannamagdyphotography/?igshid=ZDdkNTZiNTM=" target="_blank" rel="noreferrer"><i
-                                                className="fi flaticon-instagram-1" ></i></a>
-                                        </li>
-                                        {/*  <li>
-                                            <a href="#"><i
-                                                className="fi flaticon-pinterest" ></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i
-                                                className="fi flaticon-youtube" ></i></a>
-                                        </li>*/}
+                                        {companySetting.map((Element, index) => (
+                                            <React.Fragment key={index}>
+                                                <a href={Element.facebook} target="_blank" rel="noreferrer"><i
+                                                    className="fi flaticon-facebook-app-symbol" ></i></a>
+                                            </React.Fragment>
+                                        ))}
+                                        {companySetting.map((Element, index) => (
+                                            <React.Fragment key={index}>
+                                                <a href={Element.insta} target="_blank" rel="noreferrer"><i
+                                                    className="fi flaticon-instagram-1" ></i></a>
+                                            </React.Fragment>
+                                        ))}
+                                        {companySetting.map((Element, index) => (
+                                            <React.Fragment key={index}>
+                                                <a href={Element.twiter} target="_blank" rel="noreferrer"><i
+                                                    className="fi flaticon-pinterest" ></i></a>
+                                            </React.Fragment>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
@@ -116,7 +113,10 @@ function Header(api) {
                                     <div className="site-logo has_menu" >
                                         <NavLink className="navbar-brand" to="/">
                                             {companySetting.map((Element, index) => (
-                                                <img src={api.api + '/storage/app/public/' + Element.image} className='pt-2' alt={Element.name} title={Element.name} ey={index} />
+                                                <React.Fragment key={index}>
+                                                    {/*   <img src={api.api + '/storage/app/public/' + Element.image} className='pt-2' alt={Element.name} title={Element.name} key={index} /> */}
+                                                    <img src='./images/logo.png' alt={Element.name} title={Element.name} className="p-2" />
+                                                </React.Fragment>
                                             ))}
                                         </NavLink>
                                     </div>

@@ -63,7 +63,7 @@ function Price(api) {
                                                                             >
                                                                                 <div className="eltdf-st-inner">
                                                                                     <div
-                                                                                        className="eltdf-st-image mt-5"
+                                                                                        className="eltdf-st-image"
                                                                                     >
                                                                                         <img
                                                                                             width="55"
@@ -79,7 +79,6 @@ function Price(api) {
                                                                                         <span
                                                                                             className="eltdf-st-title-word"
                                                                                         >
-                                                                                            WEDDING
                                                                                         </span>
                                                                                         PACKAGES
                                                                                     </h2>
@@ -130,7 +129,7 @@ function Price(api) {
                                                                                     {price.map((Element, index) => (
                                                                                         <div
                                                                                             className="eltdf-price-table eltdf-item-space col-sm-12 col-md-4 " key={index}>
-                                                                                            <div className="eltdf-pt-inner p-4">
+                                                                                            <div className="eltdf-pt-inner p-4 pb-1">
                                                                                                 <div className="img-price">
                                                                                                     <figure>
                                                                                                         <img
@@ -149,7 +148,7 @@ function Price(api) {
                                                                                                                 {Element.name}
                                                                                                             </span>
                                                                                                         </li>
-                                                                                                        <div className="row m-0 align-items-center">
+                                                                                                        <div className="row m-0 align-items-end">
                                                                                                             <li
                                                                                                                 className="eltdf-pt-content col-6 pe-1">
                                                                                                                 <ul>
@@ -188,7 +187,7 @@ function Price(api) {
                                                                                                         </div>
                                                                                                     </ul>
                                                                                                     <div className=" me-2 ms-2">
-                                                                                                        <p className='text-center p-2 mb-2'> plase check the notes show in the laste page</p>
+                                                                                                        <p className='text-center p-2 mb-2 text'> plase check the notes show in the laste page</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>

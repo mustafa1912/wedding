@@ -5,11 +5,6 @@ import axios from 'axios';
 import '@fancyapps/fancybox/dist/jquery.fancybox.min.css';
 import '@fancyapps/fancybox/dist/jquery.fancybox.min.js';
 
-const images = [
-  { href: './images/photography/300464786_585981659689603_5752722730765849580_n.jpg', title: 'Image 1', date: ' Feb 2019  ' },
-  { href: './images/photography/321723276_1894356890955987_7026473731403773723_n.jpg', title: 'Image 2', date: ' Feb 2020  ' },
-];
-
 function Portfolio(api) {
   const [portfolio, setPortfolio] = useState([])
 
@@ -62,7 +57,6 @@ function Portfolio(api) {
                   </div>
                 </div>
               </div>
-
               <div
                 className="elementor-element elementor-element-7c3f1ea elementor-widget elementor-widget-wpo-loveme_project"
                 data-id="7c3f1ea"
@@ -81,13 +75,13 @@ function Portfolio(api) {
                               <div className='col-sm-6 col-md-3 col-lg-2 p-2' key={index}>
                                 <a data-fancybox="gallery"
                                   data-caption={Element.category}
-                                  href={Element.href}>
+                                  href={api.api + '/storage/app/public/' + Element.image} alt={Element.title}>
                                   <div className="grid w-100 ps-0 pe-0">
                                     <div className="img-holder">
                                       <img src={api.api + '/storage/app/public/' + Element.image} alt={Element.title} title={Element.title} decoding="async" className="img img-responsive" />
                                       <div className="hover-content">
                                         <h4>
-                                          <a href="#">
+                                          <a href="https://wpocean.com/wp/loveme/project/rose-harry/">
                                             {Element.main_address}
                                           </a>
                                         </h4>
@@ -98,10 +92,8 @@ function Portfolio(api) {
                                 </a>
                               </div>
                             ))}
-
                           </div>
                         </div>
-
                       </div>
                     </div>
                   </div>

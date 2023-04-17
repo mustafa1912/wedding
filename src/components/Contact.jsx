@@ -18,13 +18,14 @@ function Contact(api) {
         console.log(error);
       })
   }, [])
+
   return (
     <React.Fragment>
       <div className="eltdf-content">
         <div className="eltdf-content-inner">
 
           <div className="eltdf-container eltdf-default-page-template">
-            <div className="eltdf-container-inner clearfix">
+            <div className="eltdf-container-inner clearfix pb-0">
               <div className="eltdf-grid-row">
                 <div className="eltdf-page-content-holder eltdf-grid-col-12">
                   <div
@@ -93,9 +94,7 @@ function Contact(api) {
                                               </span>
                                             </h2>
                                             <span
-                                              className="eltdf-st-text mt-3"
-
-                                            >
+                                              className="eltdf-st-text mt-3">
                                               {companySetting.map((Element, index) => (
                                                 <React.Fragment key={index}>
                                                   <p>
@@ -140,11 +139,9 @@ function Contact(api) {
                                                     <div
                                                       className="elementor-text-editor elementor-clearfix"
                                                     >
-                                                      <h5 className='mb-2'
-
-                                                      >
+                                                      <h3 className='mb-2 mt-0' >
                                                         Contact us
-                                                      </h5>
+                                                      </h3>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -161,7 +158,115 @@ function Contact(api) {
                                                         className="elementor-widget-container"
                                                       >
                                                         <div
-                                                          className="eltdf-iwt clearfix eltdf-iwt-icon-left eltdf-iwt-icon-medium"
+                                                          className="eltdf-iwt clearfix eltdf-iwt-icon-left eltdf-iwt-icon-medium mb-1"
+                                                        >
+                                                          <div
+                                                            className="eltdf-iwt-icon"
+                                                          >
+                                                            <a
+                                                              itemProp="url"
+                                                              href="mailto:%20theaisle@qodeinteractive.com"
+                                                              target="_self"
+                                                            >
+                                                              <span
+                                                                className="eltdf-icon-shortcode eltdf-normal eltdf-icon-medium"
+                                                                data-color="#CE8F6F"
+                                                              >
+                                                                <i
+                                                                  className="flaticon-facebook-app-symbol eltdf-icon-element"
+                                                                  style={{ color: '#ce8f6f', fontSize: '25px' }}
+                                                                ></i>
+                                                              </span>
+                                                            </a>
+                                                          </div>
+                                                          <div
+                                                            className="eltdf-iwt-content"
+                                                          >
+                                                            <p
+                                                              className="eltdf-iwt-title"
+                                                              style={{ marginTop: ' -6px' }}
+                                                            >
+                                                              <a
+                                                                itemProp="url"
+                                                                href="https://www.facebook.com/Youhannamagdy12?mibextid=ZbWKwL"
+                                                                target="_blank" rel="noreferrer"
+                                                              >
+                                                                <span
+                                                                  className="eltdf-iwt-title-text"
+                                                                >
+                                                                  Youhanna magdy photography
+                                                                </span>
+                                                              </a>
+                                                            </p>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div
+                                                      className="elementor-element elementor-element-7987dd35 elementor-widget elementor-widget-eltdf_icon_with_text"
+                                                      data-id="7987dd35"
+                                                      data-element_type="widget"
+                                                      data-widget_type="eltdf_icon_with_text.default"
+                                                    >
+                                                      <div
+                                                        className="elementor-widget-container"
+                                                      >
+                                                        <div
+                                                          className="eltdf-iwt clearfix eltdf-iwt-icon-left eltdf-iwt-icon-medium mb-1"
+                                                        >
+                                                          <div
+                                                            className="eltdf-iwt-icon"
+                                                          >
+                                                            <a
+                                                              itemProp="url"
+                                                              href="mailto:%20theaisle@qodeinteractive.com"
+                                                              target="_self"
+                                                            >
+                                                              <span
+                                                                className="eltdf-icon-shortcode eltdf-normal eltdf-icon-medium"
+                                                                data-color="#CE8F6F"
+                                                              >
+                                                                <i
+                                                                  className="flaticon-instagram eltdf-icon-element"
+                                                                  style={{ color: '#ce8f6f', fontSize: '25px' }}
+                                                                ></i>
+                                                              </span>
+                                                            </a>
+                                                          </div>
+                                                          <div
+                                                            className="eltdf-iwt-content"
+                                                          >
+                                                            <p
+                                                              className="eltdf-iwt-title"
+                                                              style={{ marginTop: ' -6px' }}
+                                                            >
+                                                              <a
+                                                                itemProp="url"
+                                                                href="https://www.instagram.com/youhannamagdyphotography/?igshid=ZDdkNTZiNTM="
+                                                                target="_blank" rel="noreferrer"
+                                                              >
+                                                                <span
+                                                                  className="eltdf-iwt-title-text"
+                                                                >
+                                                                  youhannamagdyphotography
+                                                                </span>
+                                                              </a>
+                                                            </p>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div
+                                                      className="elementor-element elementor-element-7987dd35 elementor-widget elementor-widget-eltdf_icon_with_text"
+                                                      data-id="7987dd35"
+                                                      data-element_type="widget"
+                                                      data-widget_type="eltdf_icon_with_text.default"
+                                                    >
+                                                      <div
+                                                        className="elementor-widget-container"
+                                                      >
+                                                        <div
+                                                          className="eltdf-iwt clearfix eltdf-iwt-icon-left eltdf-iwt-icon-medium mb-1"
                                                         >
                                                           <div
                                                             className="eltdf-iwt-icon"
@@ -215,7 +320,7 @@ function Contact(api) {
                                                         className="elementor-widget-container"
                                                       >
                                                         <div
-                                                          className="eltdf-iwt clearfix eltdf-iwt-icon-left eltdf-iwt-icon-medium"
+                                                          className="eltdf-iwt clearfix eltdf-iwt-icon-left eltdf-iwt-icon-medium mb-1"
                                                         >
                                                           <div
                                                             className="eltdf-iwt-icon"
@@ -261,7 +366,7 @@ function Contact(api) {
                                                         </div>
                                                       </div>
                                                     </div>
-                                                    <div
+                                                    {/* <div
                                                       className="elementor-element elementor-element-2234bf9 elementor-widget elementor-widget-eltdf_icon_with_text"
                                                       data-id="2234bf9"
                                                       data-element_type="widget"
@@ -271,7 +376,7 @@ function Contact(api) {
                                                         className="elementor-widget-container"
                                                       >
                                                         <div
-                                                          className="eltdf-iwt clearfix eltdf-iwt-icon-left eltdf-iwt-icon-medium"
+                                                          className="eltdf-iwt clearfix eltdf-iwt-icon-left eltdf-iwt-icon-medium mb-1"
                                                         >
                                                           <div
                                                             className="eltdf-iwt-icon"
@@ -312,7 +417,7 @@ function Contact(api) {
                                                           </div>
                                                         </div>
                                                       </div>
-                                                    </div>
+                                                                </div> */}
                                                   </React.Fragment>
                                                 ))}
                                               </div>
@@ -415,28 +520,30 @@ function Contact(api) {
                                                     name="your-message"
                                                   ></textarea>
                                                 </span>
-                                                <button
-                                                  className="wpcf7-form-control wpcf7-submit eltdf-btn eltdf-btn-medium eltdf-btn-solid"
-                                                  type="submit"
-                                                >
-                                                  <span
-                                                    className="eltdf-btn-text"
+                                                <div className="d-flex justify-content-center" >
+                                                  <button
+                                                    className="wpcf7-form-control wpcf7-submit eltdf-btn eltdf-btn-medium eltdf-btn-solid"
+                                                    type="submit"
                                                   >
-                                                    Contact us
-                                                  </span>
-                                                  <span
-                                                    className="eltdf-btn-line eltdf-btn-line-top"
-                                                  ></span>
-                                                  <span
-                                                    className="eltdf-btn-line eltdf-btn-line-right"
-                                                  ></span>
-                                                  <span
-                                                    className="eltdf-btn-line eltdf-btn-line-bottom"
-                                                  ></span>
-                                                  <span
-                                                    className="eltdf-btn-line eltdf-btn-line-left"
-                                                  ></span>
-                                                </button>
+                                                    <span
+                                                      className="eltdf-btn-text"
+                                                    >
+                                                      Contact us
+                                                    </span>
+                                                    <span
+                                                      className="eltdf-btn-line eltdf-btn-line-top"
+                                                    ></span>
+                                                    <span
+                                                      className="eltdf-btn-line eltdf-btn-line-right"
+                                                    ></span>
+                                                    <span
+                                                      className="eltdf-btn-line eltdf-btn-line-bottom"
+                                                    ></span>
+                                                    <span
+                                                      className="eltdf-btn-line eltdf-btn-line-left"
+                                                    ></span>
+                                                  </button>
+                                                </div>
                                               </div>
                                               <div
                                                 className="wpcf7-response-output"

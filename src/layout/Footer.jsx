@@ -44,10 +44,11 @@ function Footer(api) {
                                         <div className="widget about-widget">
                                             {companySetting.map((Element, index) => (
                                                 <React.Fragment key={index}>
-                                                    <div className="logo widget-title">
-                                                        <img src={api.api + '/storage/app/public/' + Element.image} alt={Element.name} title={Element.name} />
+                                                    <div className="logo widget-title m-0">
+                                                        {/*   <img src={api.api + '/storage/app/public/' + Element.image} alt={Element.name} title={Element.name} />*/}
+                                                        <img src='./images/logo.png' alt={Element.name} title={Element.name}   className="p-2"/>
                                                     </div>
-                                                    <p>
+                                                    <p className="text-center">
                                                         {Element.notes}
                                                     </p>
                                                 </React.Fragment>
@@ -55,21 +56,29 @@ function Footer(api) {
                                             <div className="social-icons">
                                                 <ul>
                                                     <li>
-                                                        <a href="https://www.facebook.com/Youhannamagdy12?mibextid=ZbWKwL" target="_blank" rel="noreferrer"  ><i
-                                                            className="flaticon-facebook-app-symbol"></i></a>
+                                                        {companySetting.map((Element, index) => (
+                                                            <React.Fragment key={index}>
+                                                                <a href={Element.facebook} target="_blank" rel="noreferrer"  ><i
+                                                                    className="flaticon-facebook-app-symbol"></i></a>
+                                                            </React.Fragment>
+                                                        ))}
                                                     </li>
                                                     <li>
-                                                        <a href="https://www.instagram.com/youhannamagdyphotography/?igshid=ZDdkNTZiNTM=" target="_blank" rel="noreferrer"><i
-                                                            className="flaticon-instagram"></i></a>
-                                                    </li>
-                                                    {/*  <li>
-                                                        <a href="#"><i
-                                                            className="flaticon-twitter"></i></a>
+                                                        {companySetting.map((Element, index) => (
+                                                            <React.Fragment key={index}>
+                                                                <a href={Element.insta} target="_blank" rel="noreferrer"><i
+                                                                    className="flaticon-instagram"></i></a>
+                                                            </React.Fragment>
+                                                        ))}
                                                     </li>
                                                     <li>
-                                                        <a href="#"><i
-                                                            className="flaticon-pinterest"></i></a>
-                                                    </li> */}
+                                                        {companySetting.map((Element, index) => (
+                                                            <React.Fragment key={index}>
+                                                                <a href={Element.twiter} target="_blank" rel="noreferrer"><i
+                                                                    className="flaticon-pinterest"></i></a>
+                                                            </React.Fragment>
+                                                        ))}
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
