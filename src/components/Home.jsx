@@ -80,7 +80,6 @@ function Home(api) {
         //         // handle error
         //         console.log(error);
         //     })
-
         setSlider([
             {
                 "address": "Efficiency", "image": "/76avRXe1zE2PDUY1SyceQBbLIvHmBjrwPn0jvyN3.jpg",
@@ -209,7 +208,6 @@ function Home(api) {
             }
         ])
     }, [])
-console.log(setClient)
 
     const options_reviews = {
         // margin: 30,
@@ -256,80 +254,84 @@ console.log(setClient)
                                     data-widget_type="wpo-loveme_about.default" >
                                     <div className="elementor-widget-container">
                                         <div className="wpo-about-section">
-                                            <OwlCarousel
-                                                className='owl-carousel  ' {...options_reviews}
-                                                autoplay loop items='2' lazyLoad lazyContent nav dots={false}
-                                                animateIn={'bounceInRight'}
-                                                animateOut={'bounceOutLeft'}>
-                                                {slider.map((Element, index) => (
-                                                    <div className='item' key={index}>
-                                                        <div className="container">
-                                                            <div className="row align-items-center">
-                                                                <div className="col-lg-5 col-md-12 col-12 pt-5 pb-5">
-                                                                    <div className="wpo-about-wrap">
-                                                                        <div className="wpo-about-item">
-                                                                            <div className="wpo-about-img">
-                                                                                <img
-                                                                                    decoding="async"
-                                                                                    src={'/storage' + Element.image}
-                                                                                    alt={Element.name}
-                                                                                    title={Element.name}
-                                                                                />
+                                            {slider.map((sliderElement, sliderIndex) => (
+                                                <React.Fragment>
+                                                    {sliderIndex === 0 ?
+                                                        <OwlCarousel
+                                                            className='owl-carousel  ' {...options_reviews} key={sliderIndex}
+                                                            autoplay loop items='2' lazyLoad lazyContent nav dots={false} >
+                                                            {slider.map((Element, index) => (
+                                                                <div className='item' key={index}>
+                                                                    <div className="container">
+                                                                        <div className="row align-items-center">
+                                                                            <div className="col-lg-5 col-md-12 col-12 pt-5 pb-5">
+                                                                                <div className="wpo-about-wrap">
+                                                                                    <div className="wpo-about-item">
+                                                                                        <div className="wpo-about-img">
+                                                                                            <img
+                                                                                                decoding="async"
+                                                                                                src={'/storage' + Element.image}
+                                                                                                alt={Element.name}
+                                                                                                title={Element.name}
+                                                                                            />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div className="about-single-item">
+                                                                                        <div
+                                                                                            className="wpo-about-item-s2 wow rollIn"
+                                                                                            data-wow-duration="2s"
+                                                                                            animateIn={'bounceInRight'}
+                                                                                            style={{
+                                                                                                visibility: "visible",
+                                                                                                animationDuration: "5s",
+                                                                                                animationName: "rollIn",
+                                                                                                animationIterationCount: 'infinite',
+                                                                                                // animationDelay:'5s',
+                                                                                            }}>
+                                                                                            <div className="wpo-about-img">
+                                                                                                <img
+                                                                                                    decoding="async"
+                                                                                                    src={'/storage' + Element.image}
+                                                                                                    alt={Element.name}
+                                                                                                    title={Element.name}
+                                                                                                />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div className="ab-shape">
+                                                                                        <img
+                                                                                            decoding="async"
+                                                                                            src="./images/IMG_20230416_210803_516.png"
+                                                                                            alt=""
+                                                                                        />
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
-                                                                        </div>
-                                                                        <div className="about-single-item">
-                                                                            <div
-                                                                                className="wpo-about-item-s2 wow rollIn"
-                                                                                data-wow-duration="2s"
-                                                                                animateIn={'bounceInRight'}
-                                                                                style={{
-                                                                                    visibility: "visible",
-                                                                                    animationDuration: "5s",
-                                                                                    animationName: "rollIn",
-                                                                                    animationIterationCount: 'infinite',
-                                                                                    // animationDelay:'5s',
-                                                                                }}>
-                                                                                <div className="wpo-about-img">
-                                                                                    <img
-                                                                                        decoding="async"
-                                                                                        src={'/storage' + Element.image}
-                                                                                        alt={Element.name}
-                                                                                        title={Element.name}
-                                                                                    />
+                                                                            <div className="col-lg-7 col-md-12 col-12">
+                                                                                <div className="wpo-about-text">
+                                                                                    <div className="wpo-about-icon">
+                                                                                    </div>
+                                                                                    <div className="wpo-about-icon-content">
+                                                                                        <h2> {Element.address} </h2>
+                                                                                        <p>
+                                                                                            {Element.notes}
+                                                                                        </p>
+                                                                                        <div className="d-flex justify-content-center" style={{ marginRight: '30px' }}>
+                                                                                            <NavLink to="/about" className="theme-btn-s3" >
+                                                                                                More About
+                                                                                            </NavLink>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div className="ab-shape">
-                                                                            <img
-                                                                                decoding="async"
-                                                                                src="./images/IMG_20230416_210803_516.png"
-                                                                                alt=""
-                                                                            />
-                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                                <div className="col-lg-7 col-md-12 col-12">
-                                                                    <div className="wpo-about-text">
-                                                                        <div className="wpo-about-icon">
-                                                                        </div>
-                                                                        <div className="wpo-about-icon-content">
-                                                                            <h2> {Element.address} </h2>
-                                                                            <p>
-                                                                                {Element.notes}
-                                                                            </p>
-                                                                            <div className="d-flex justify-content-center" style={{ marginRight: '30px' }}>
-                                                                                <NavLink to="/about" className="theme-btn-s3" >
-                                                                                    More About
-                                                                                </NavLink>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                ))}
-                                            </OwlCarousel>
+                                                            ))}
+                                                        </OwlCarousel> : null
+                                                    }
+                                                </React.Fragment>
+                                            ))}
                                         </div>
                                     </div>
                                 </div>
@@ -370,7 +372,6 @@ console.log(setClient)
                                         </div>
                                     </div>
                                 </div>
-
                                 <div
                                     className="elementor-element elementor-element-7c3f1ea elementor-widget elementor-widget-wpo-loveme_project"
                                     data-id="7c3f1ea"
@@ -385,14 +386,17 @@ console.log(setClient)
                                                         className="portfolio-grids gallery-container clearfix">
                                                         <div className='row m-0'>
                                                             {portfolio.map((Element, index) => (
-                                                                <div className="col-sm-6 col-md-3 col-lg-2 p-2" key={index}>
+                                                                <React.Fragment key={index}>
                                                                     {index < 6 ?
-                                                                        <div className="wpo-about-item-s2 mb-2">
-                                                                            <div className="wpo-about-img" >
-                                                                                <div className="bg-img-portfolio" style={{ backgroundImage: `url('storage${Element.image}')` }}></div>
+                                                                        <div className="col-sm-6 col-md-3 col-lg-2 p-2" >
+                                                                            <div className="wpo-about-item-s2 mb-2">
+                                                                                <div className="wpo-about-img" >
+                                                                                    <div className="bg-img-portfolio" style={{ backgroundImage: `url('storage${Element.image}')` }}></div>
+                                                                                </div>
                                                                             </div>
-                                                                        </div> : ''}
-                                                                </div>
+                                                                        </div>
+                                                                        : null}
+                                                                </React.Fragment>
                                                             ))}
                                                         </div>
                                                     </div>
@@ -624,125 +628,129 @@ console.log(setClient)
                                     <div className="elementor-widget-container">
                                         <div className="wpo-testimonials-section">
                                             <div className="container">
-
-                                                <OwlCarousel
-                                                    className='owl-carousel  ' {...options_reviews}
-                                                    autoplay
-                                                    loop
-                                                    items='2'
-                                                    lazyLoad lazyContent
-                                                    nav dots={false}
-                                                    animateIn={'bounceInRight'}
-                                                    animateOut={'bounceOutLeft'}>
-                                                    {client.map((Element, index) => (
-                                                        <div className='item' key={index}>
-                                                            <div className="row align-items-center">
-                                                                <div className="col-lg-4 col-12">
-                                                                    <div className="wpo-testimonials-img">
-                                                                        <img
-                                                                            decoding="async"
-                                                                            // src="./images/test-thumb.jpg"
-                                                                            src={'/storage' + Element.image}
-                                                                            alt={Element.name}
-                                                                            title={Element.name}
-                                                                        />
-                                                                        <div className="wpo-testimonials-img-shape">
-                                                                            <img
-                                                                                decoding="async"
-                                                                                src="./images/testi-shape.png"
-                                                                                //  src={api.api+'/storage' + Element.image}
-                                                                                alt={Element.name}
-                                                                                title={Element.name}
-                                                                            />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-lg-8 col-12">
-                                                                    <section
-                                                                        className="elementor-section elementor-top-section elementor-element elementor-element-11670ba eltdf-elementor-row-grid-section elementor-section-boxed elementor-section-height-default elementor-section-height-default eltdf-parallax-row-no eltdf-content-aligment-left eltdf-disabled-bg-image-bellow-no"
-                                                                        data-id="11670ba"
-                                                                        data-element_type="section"
-                                                                    >
-                                                                        <div
-                                                                            className="elementor-container elementor-column-gap-default w-100"
-                                                                        >
-                                                                            <div className="elementor-row">
-                                                                                <div
-                                                                                    className="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8b786f1 w-100"
-                                                                                    data-id="8b786f1"
-                                                                                    data-element_type="column"
+                                                {client.map((clientElement, clientIndex) => (
+                                                    <React.Fragment key={clientIndex}>
+                                                        {clientIndex === 0 ?
+                                                            <OwlCarousel
+                                                                className='owl-carousel  ' {...options_reviews}
+                                                                autoplay
+                                                                loop
+                                                                items='2'
+                                                                lazyLoad lazyContent
+                                                                nav dots={false}
+                                                                animateIn={'bounceInRight'}
+                                                                animateOut={'bounceOutLeft'}>
+                                                                {client.map((Element, index) => (
+                                                                    <div className='item' key={index}>
+                                                                        <div className="row align-items-center">
+                                                                            <div className="col-lg-4 col-12">
+                                                                                <div className="wpo-testimonials-img">
+                                                                                    <img
+                                                                                        decoding="async"
+                                                                                        // src="./images/test-thumb.jpg"
+                                                                                        src={'/storage' + Element.image}
+                                                                                        alt={Element.name}
+                                                                                        title={Element.name}
+                                                                                    />
+                                                                                    <div className="wpo-testimonials-img-shape">
+                                                                                        <img
+                                                                                            decoding="async"
+                                                                                            src="./images/testi-shape.png"
+                                                                                            //  src={api.api+'/storage' + Element.image}
+                                                                                            alt={Element.name}
+                                                                                            title={Element.name}
+                                                                                        />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div className="col-lg-8 col-12">
+                                                                                <section
+                                                                                    className="elementor-section elementor-top-section elementor-element elementor-element-11670ba eltdf-elementor-row-grid-section elementor-section-boxed elementor-section-height-default elementor-section-height-default eltdf-parallax-row-no eltdf-content-aligment-left eltdf-disabled-bg-image-bellow-no"
+                                                                                    data-id="11670ba"
+                                                                                    data-element_type="section"
                                                                                 >
                                                                                     <div
-                                                                                        className="elementor-column-wrap elementor-element-populated"
+                                                                                        className="elementor-container elementor-column-gap-default w-100"
                                                                                     >
-                                                                                        <div className="elementor-widget-wrap">
+                                                                                        <div className="elementor-row">
                                                                                             <div
-                                                                                                className="elementor-element elementor-element-c77d5c4 elementor-widget elementor-widget-eltdf_section_title mt-3"
-                                                                                                data-id="c77d5c4"
-                                                                                                data-element_type="widget"
-                                                                                                data-widget_type="eltdf_section_title.default"
+                                                                                                className="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8b786f1 w-100"
+                                                                                                data-id="8b786f1"
+                                                                                                data-element_type="column"
                                                                                             >
-                                                                                                <div className="elementor-widget-container">
-                                                                                                    <div
-                                                                                                        className="eltdf-section-title-holder eltdf-st-standard eltdf-section-title-appeared"
+                                                                                                <div
+                                                                                                    className="elementor-column-wrap elementor-element-populated"
+                                                                                                >
+                                                                                                    <div className="elementor-widget-wrap">
+                                                                                                        <div
+                                                                                                            className="elementor-element elementor-element-c77d5c4 elementor-widget elementor-widget-eltdf_section_title mt-3"
+                                                                                                            data-id="c77d5c4"
+                                                                                                            data-element_type="widget"
+                                                                                                            data-widget_type="eltdf_section_title.default"
+                                                                                                        >
+                                                                                                            <div className="elementor-widget-container">
+                                                                                                                <div
+                                                                                                                    className="eltdf-section-title-holder eltdf-st-standard eltdf-section-title-appeared"
 
-                                                                                                    >
-                                                                                                        <div className="eltdf-st-inner">
-                                                                                                            <div className="eltdf-st-image"></div>
-                                                                                                            <h2 className="eltdf-st-title">
-                                                                                                                <span
-                                                                                                                    className="eltdf-st-title-word"
                                                                                                                 >
-                                                                                                                    {Element.name}
-                                                                                                                </span>
+                                                                                                                    <div className="eltdf-st-inner">
+                                                                                                                        <div className="eltdf-st-image"></div>
+                                                                                                                        <h2 className="eltdf-st-title">
+                                                                                                                            <span
+                                                                                                                                className="eltdf-st-title-word"
+                                                                                                                            >
+                                                                                                                                {Element.name}
+                                                                                                                            </span>
 
-                                                                                                            </h2>
+                                                                                                                        </h2>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
                                                                                                         </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div
-                                                                                                className="elementor-element elementor-element-c3a48ac elementor-widget elementor-widget-text-editor"
-                                                                                                data-id="c3a48ac"
-                                                                                                data-element_type="widget"
-                                                                                                data-widget_type="text-editor.default"
-                                                                                            >
-                                                                                                <div className="elementor-widget-container">
-                                                                                                    <div
-                                                                                                        className="elementor-text-editor elementor-clearfix"
-                                                                                                    >
-                                                                                                        <p className="text-center">
-                                                                                                            {Element.notes}
-                                                                                                        </p>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div
-                                                                                                className="elementor-element elementor-element-fa455bf elementor-widget elementor-widget-eltdf_single_image"
-                                                                                                data-id="fa455bf"
-                                                                                                data-element_type="widget"
-                                                                                                data-widget_type="eltdf_single_image.default"
-                                                                                            >
-                                                                                                <div className="elementor-widget-container">
-                                                                                                    <div
-                                                                                                        className="eltdf-single-image-holder"
-                                                                                                    >
+                                                                                                        <div
+                                                                                                            className="elementor-element elementor-element-c3a48ac elementor-widget elementor-widget-text-editor"
+                                                                                                            data-id="c3a48ac"
+                                                                                                            data-element_type="widget"
+                                                                                                            data-widget_type="text-editor.default"
+                                                                                                        >
+                                                                                                            <div className="elementor-widget-container">
+                                                                                                                <div
+                                                                                                                    className="elementor-text-editor elementor-clearfix"
+                                                                                                                >
+                                                                                                                    <p className="text-center">
+                                                                                                                        {Element.notes}
+                                                                                                                    </p>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            className="elementor-element elementor-element-fa455bf elementor-widget elementor-widget-eltdf_single_image"
+                                                                                                            data-id="fa455bf"
+                                                                                                            data-element_type="widget"
+                                                                                                            data-widget_type="eltdf_single_image.default"
+                                                                                                        >
+                                                                                                            <div className="elementor-widget-container">
+                                                                                                                <div
+                                                                                                                    className="eltdf-single-image-holder"
+                                                                                                                >
 
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                </div>
+                                                                                </section>
                                                                             </div>
                                                                         </div>
-                                                                    </section>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    ))}
-                                                </OwlCarousel>
-
+                                                                    </div>
+                                                                ))}
+                                                            </OwlCarousel>
+                                                            : null}
+                                                    </React.Fragment>
+                                                ))}
                                             </div>
                                             <div className="wpo-testimonials-shape">
                                                 <img

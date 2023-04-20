@@ -6,11 +6,11 @@
 @font-face {
   font-family: "flaticon";
   src: url("./flaticon.eot");
-        src: url("./flaticon.eot?#iefix") format("embedded-opentype"),
-             url("./flaticon.woff2") format("woff2"),
-             url("./flaticon.woff") format("woff"),
-             url("./flaticon.ttf") format("truetype");
-   font-weight: normal;
+  src: url("./flaticon.eot?#iefix") format("embedded-opentype"),
+    url("./flaticon.woff2") format("woff2"),
+    url("./flaticon.woff") format("woff"),
+    url("./flaticon.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 

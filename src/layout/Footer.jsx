@@ -129,8 +129,16 @@ function Footer(api) {
                                                     <li>
                                                         {companySetting.map((Element, index) => (
                                                             <React.Fragment key={index}>
-                                                                <a href={Element.twiter} target="_blank" rel="noreferrer"><i
-                                                                    className="flaticon-pinterest"></i></a>
+                                                                <a href={'https://wa.me/' + Element.tel} target="_blank" rel="noreferrer"><i
+                                                                    className="fab fa-whatsapp"></i></a>
+                                                            </React.Fragment>
+                                                        ))}
+                                                    </li>
+                                                    <li>
+                                                        {companySetting.map((Element, index) => (
+                                                            <React.Fragment key={index}>
+                                                                <a href={"tel:" + Element.tel} rel="noreferrer"><i
+                                                                    className="flaticon-phone-call"></i></a>
                                                             </React.Fragment>
                                                         ))}
                                                     </li>
@@ -211,16 +219,18 @@ function Footer(api) {
                                         <div id="gallery-2"
                                             className="gallery galleryid-16 gallery-columns-3 gallery-size-thumbnail">
                                             {portfolio.map((Element, index) => (
-                                                <figure className="gallery-item" key={index}>
-                                                    <div className="gallery-icon portrait">
-                                                        {index < 6 ?
-                                                            <img width="150" height="150"
-                                                                src={'/storage' + Element.image}
-                                                                className="attachment-thumbnail size-thumbnail" alt={Element.name} title={Element.name} decoding="async"
-                                                                loading="lazy" />
-                                                            : ''}
-                                                    </div>
-                                                </figure>
+                                                <React.Fragment key={index}>
+                                                    {index < 6 ?
+                                                        <figure className="gallery-item" >
+                                                            <div className="gallery-icon portrait">
+                                                                <img width="150" height="150"
+                                                                    src={'/storage' + Element.image}
+                                                                    className="attachment-thumbnail size-thumbnail" alt={Element.name} title={Element.name} decoding="async"
+                                                                    loading="lazy" />
+                                                            </div>
+                                                        </figure>
+                                                        : null}
+                                                </React.Fragment>
                                             ))}
                                         </div>
                                         <div className="clear"></div>
@@ -246,8 +256,8 @@ function Footer(api) {
                         </div>
                     </div>
                 </div>
-            </footer>
-        </React.Fragment>
+            </footer >
+        </React.Fragment >
     )
 }
 

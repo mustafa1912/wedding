@@ -6747,7 +6747,7 @@ header .topbar .contact-info ul i:before{
 }
 
 .wpo-site-header .container-fluid {
-  padding-right: 0;
+  /* padding-right: 0; */
 }
 
 @media (max-width: 991px) {
@@ -7363,6 +7363,7 @@ header .topbar .contact-info ul i:before{
 @media (max-width: 991px) {
   .wpo-site-header .navigation {
     padding: 20px 0;
+    padding-bottom:0 !important
   }
 }
 
@@ -9609,6 +9610,7 @@ static-hero-s4
 
 .wpo-site-footer .wpo-upper-footer {
   padding: 100px 120px;
+  padding-bottom:50px;
   position: relative;
   z-index: 1;
 }
@@ -9762,6 +9764,9 @@ header .clearfix a ,
   text-align: center;
   border-radius: 50%;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wpo-site-footer .about-widget ul li a i:before {
@@ -11733,7 +11738,7 @@ div#elementor-lightbox-slideshow-single-img {
   .wpo-about-section .wpo-about-text,
   .wpo-about-section-s2 .wpo-about-text {
     padding-left: 0;
-    padding-top: 50px;
+    padding-top: 0;
   }
 }
 
@@ -44327,7 +44332,7 @@ html.fp-enabled {
 
 .eltdf-price-table .eltdf-pt-inner ul li {
   margin: 0;
-  padding: 2px 10px;
+  padding: 1px 10px;
   text-align: center;
 }
 
@@ -44367,7 +44372,7 @@ html.fp-enabled {
   padding: 20px 0 0;
   box-sizing: border-box;
   font-size: 22px;
-  font-size: 22px;
+  font-weight: 600;
 }
 
 .eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices {
@@ -44390,7 +44395,7 @@ html.fp-enabled {
   top: 50%;
   font-size: 28px;
   line-height: 1em;
-  right: -50%;
+  right: -40%;
 }
 
 .eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices .eltdf-pt-price {
@@ -54546,4 +54551,24 @@ body.elementor-page .elementor-widget-menu-anchor {
     flex: 0 0 auto;
     width: 50%;
   }
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(./fa-brands-400.woff2) format("woff2") 
+}
+
+.fa-whatsapp:before {
+  content: "\f232";
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}.fa-brands, .fab {
+  font-weight: 400;
+  font-style: normal;
+}.fa-brands, .fab {
+  font-family: "Font Awesome 6 Brands";
 }

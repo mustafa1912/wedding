@@ -89,8 +89,14 @@ function Header(api) {
                                         ))}
                                         {companySetting.map((Element, index) => (
                                             <React.Fragment key={index}>
-                                                <a href={Element.twiter} target="_blank" rel="noreferrer"><i
-                                                    className="fi flaticon-pinterest" ></i></a>
+                                                <a href={'https://wa.me/' + Element.tel} target="_blank" rel="noreferrer"><i
+                                                    className="fab fa-whatsapp"></i></a>
+                                            </React.Fragment>
+                                        ))}
+                                        {companySetting.map((Element, index) => (
+                                            <React.Fragment key={index}>
+                                                <a href={"tel:" + Element.tel} rel="noreferrer"><i
+                                                    className="flaticon-phone-call"></i></a>
                                             </React.Fragment>
                                         ))}
                                     </ul>
@@ -102,7 +108,7 @@ function Header(api) {
                 <nav id="site-navigation"
                     className="navigation navbar navbar-expand-lg navbar-light sticky-menu-on has-menu original sticky-on">
                     <div className="container-fluid">
-                        <div className="row align-items-center">
+                        <div className="row align-items-center m-0">
                             <div className="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
                                 <div className="mobail-menu">
                                     <button type="button" className={'navbar-toggler open-btn '} onClick={openMenue}>
