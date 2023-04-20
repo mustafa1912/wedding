@@ -105,7 +105,7 @@ function Home(api) {
             }
         },
     };
-
+    console.log(slider)
     return (
         <React.Fragment>
             <div
