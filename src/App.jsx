@@ -11,7 +11,8 @@ import About from './components/About';
 import Price from './components/Price';
 
 function App() {
-  const api = 'http://localhost/livewire-master'
+  // const api = 'http://localhost/livewire-master'
+  const api = 'http://youhannamagdy.atwebpages.com'
   return (
     <React.Fragment>
       <div className="page-wrapper layout-full box-style-none">
