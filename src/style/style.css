@@ -44337,7 +44337,7 @@ html.fp-enabled {
   margin-left: 5px;
   color: #864e26;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .eltdf-price-table .eltdf-pt-inner .eltdf-pt-content ul li:before {
@@ -44387,10 +44387,10 @@ html.fp-enabled {
 .eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices .eltdf-pt-value {
   position: absolute;
   vertical-align: super;
-  bottom: 0;
+  top: 50%;
   font-size: 28px;
   line-height: 1em;
-  right: -65%;
+  right: -50%;
 }
 
 .eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices .eltdf-pt-price {

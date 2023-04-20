@@ -10,25 +10,80 @@ function Footer(api) {
 
     useEffect(() => {
         // Portfolio
-        axios.get(`${api.api}/api/Portfolio`)
-            .then(function (response) {
-                // handle success
-                setPortfolio(response.data)
-            })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            })
+        // axios.get(`${api.api}/api/Portfolio`)
+        //     .then(function (response) {
+        //         // handle success
+        //         setPortfolio(response.data)
+        //     })
+        //     .catch(function (error) {
+        //         // handle error
+        //         console.log(error);
+        //     })
         // CompanySetting
-        axios.get(`${api.api}/api/companySetting`)
-            .then(function (response) {
-                // handle success
-                setCompanySetting(response.data)
-            })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            })
+        // axios.get(`${api.api}/api/companySetting`)
+        //     .then(function (response) {
+        //         // handle success
+        //         setCompanySetting(response.data)
+        //     })
+        //     .catch(function (error) {
+        //         // handle error
+        //         console.log(error);
+        //     })
+        setPortfolio(
+            [{
+                "id": 10, "main_address": "american garden halls", "image": "admin@gmail.com\/bq6UAL1vS82ZlqArnj6ZaitNZsYSTZvDe9gENWTt.jpg", "category":
+                    "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:31:07.000000Z", "updated_at": "2023-04-17T22:31:07.000000Z"
+            },
+            {
+                "id": 11, "main_address": "american garden halls", "image": "admin@gmail.com\/2irHvMzIpA1MKmjn2fHwVUxFGVzTw53Gf2jxwlp7.jpg",
+                "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:31:29.000000Z", "updated_at": "2023-04-17T22:31:29.000000Z"
+            },
+            {
+                "id": 12, "main_address": "american garden halls", "image": "admin@gmail.com\/Tuj3Yx0HII3FyJrMePW9dimFqZbrCGW7zFV4YdII.jpg", "category": "Mina & Mariam",
+                "date": "2023-02-01", "created_at": "2023-04-17T22:31:42.000000Z", "updated_at": "2023-04-17T22:31:42.000000Z"
+            }, {
+                "id": 13, "main_address": "american garden halls",
+                "image": "admin@gmail.com\/1Q3na6qQYa2VG7ChcMR6q89y6rGkdIYfzPtxeBV6.jpg", "category": "Mina & Mariam", "date":
+                    "2023-02-01", "created_at": "2023-04-17T22:31:57.000000Z", "updated_at": "2023-04-17T22:31:57.000000Z"
+            }, {
+                "id": 14,
+                "main_address": "american garden halls", "image": "admin@gmail.com\/e6rhP9bLw5Hp4e2cuRBOfixngZjUptEehNU3npn8.jpg", "category":
+                    "Mina & Mariam", "date": "2023-02-18", "created_at": "2023-04-17T22:32:18.000000Z", "updated_at": "2023-04-17T22:32:18.000000Z"
+            },
+            {
+                "id": 15, "main_address": "american garden halls", "image": "admin@gmail.com\/MrLKA6mRB320u1RGXfUmvn0nS3vwILw5H5ML4j8Z.jpg",
+                "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:32:37.000000Z", "updated_at": "2023-04-17T22:32:37.000000Z"
+            },
+            {
+                "id": 16, "main_address": "american garden halls", "image": "admin@gmail.com\/bTiZesbFlkOdWWD03VUqQwKruE5boOReUfJPDFdu.jpg", "category": "Mina & Mariam",
+                "date": "2023-02-01", "created_at": "2023-04-17T22:32:50.000000Z", "updated_at": "2023-04-17T22:32:50.000000Z"
+            }, {
+                "id": 17, "main_address": "american garden halls",
+                "image": "admin@gmail.com\/NurS9fkwdZkSQHA7TFhFvimXVGSVPG9xxHvS4GGX.jpg", "category": "Mina & Mariam", "date": "2023-02-01",
+                "created_at": "2023-04-17T22:33:00.000000Z", "updated_at": "2023-04-17T22:33:00.000000Z"
+            }, {
+                "id": 18, "main_address": "american garden halls",
+                "image": "admin@gmail.com\/2NhLotdflxk7MgoLa9zAkNl49o6ewRd1HwKyT4yw.jpg", "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:33:16.000000Z", "updated_at": "2023-04-17T22:33:16.000000Z"
+            }, {
+                "id": 19, "main_address": "american garden halls",
+                "image": "admin@gmail.com\/emD65nonXdWxcvU8mNzIsHe1MD1FuXkEjH4mfFHz.jpg", "category": "Mina & Mariam", "date": "2023-04-01",
+                "created_at": "2023-04-17T22:33:29.000000Z", "updated_at": "2023-04-17T22:33:29.000000Z"
+            }, {
+                "id": 20, "main_address": "american garden halls",
+                "image": "admin@gmail.com\/xabQoD20EaIVMWJgyNLAiKUFSaHPB5odd3Nqw1D7.jpg", "category": "Mina & Mariam", "date": "2023-04-01", "created_at":
+                    "2023-04-17T22:34:56.000000Z", "updated_at": "2023-04-17T22:34:56.000000Z"
+            }, {
+                "id": 21, "main_address": "daba"
+                , "image": "admin@gmail.com\/WvQIjeIVHfUyMTOw6ieQDReLU9lPOxaX3RzqvGJH.jpg", "category": "Andrew & Mariam", "date":
+                    "2023-03-20", "created_at": "2023-04-17T22:35:14.000000Z", "updated_at": "2023-04-17T22:35:14.000000Z"
+            }, { "id": 22, "main_address": "daba", "image": "admin@gmail.com\/hv2XJ4MMLMKbLYf9IaUrE8qK8bgAyhSXrnP7gWv3.jpg", "category": "Andrew & Mariam", "date": "2023-03-20", "created_at": "2023-04-17T22:35:28.000000Z", "updated_at": "2023-04-17T22:35:28.000000Z" }, { "id": 23, "main_address": "florenta location", "image": "admin@gmail.com\/WwR6Cb47gDn4vJ4SfjQyWj7FqrSTBja1f3VJvhxR.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:36:29.000000Z", "updated_at": "2023-04-17T22:36:29.000000Z" }, { "id": 24, "main_address": "florenta location", "image": "admin@gmail.com\/OzR48daoKPGWRSIzcufK9B1pTa3OzRBfovcs3Rv0.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:36:44.000000Z", "updated_at": "2023-04-17T22:36:44.000000Z" }, { "id": 25, "main_address": "florenta location", "image": "admin@gmail.com\/DwTUuD6Bzpdu8S4w5ZwOE6hiPLz460ZytHFBczC1.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:00.000000Z", "updated_at": "2023-04-17T22:37:00.000000Z" }, { "id": 26, "main_address": "florenta location", "image": "admin@gmail.com\/u05lGMcFigWa1bxtLgrhDe0RURnqBMnreIccRSIN.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:18.000000Z", "updated_at": "2023-04-17T22:37:18.000000Z" }, { "id": 27, "main_address": "florenta location", "image": "admin@gmail.com\/8xLICFlZO0srLk8krl55t9CSpitbp3b2AISsLYLi.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:34.000000Z", "updated_at": "2023-04-17T22:37:34.000000Z" }, { "id": 28, "main_address": "florenta location", "image": "admin@gmail.com\/IMCtFe2OZNYvpyqDiaeS6iz51goLZk1II9RtBEdZ.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:47.000000Z", "updated_at": "2023-04-17T22:37:47.000000Z" }, { "id": 29, "main_address": "florenta location", "image": "admin@gmail.com\/5R8cRqv30y0leE5iLzD2lUFDCpN3oc4cKvAWsAfJ.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:38:11.000000Z", "updated_at": "2023-04-17T22:38:11.000000Z" }, { "id": 30, "main_address": "florenta location", "image": "admin@gmail.com\/RJpItLrcabYJQQ0dL2F4N5i8KEeIns4kHCwRhcTz.jpg", "category": "mikhael & marina", "date": "2023-01-01", "created_at": "2023-04-17T22:39:11.000000Z", "updated_at": "2023-04-17T22:39:11.000000Z" }]
+        )
+        setCompanySetting([{
+            "id": 1, "name": "Youhnaa Magdy", "image": null,
+            "address": "Shebin El-Kom - Menoufia", "notes": "Behind every moment there is a photo make us remember it",
+            "links": "https:\/\/www.google.com\/maps\/place\/Shibin+el+Kom,+Menofia+Governorate\/@30.5559056,30.9745792,14z\/data=!3m1!4b1!4m6!3m5!1s0x14f7d6f3a7714525:0xc0bc979946137d21!8m2!3d30.5563944!4d31.0048384!16s%2Fg%2F11hdx5my0n", "facebook": "https:\/\/www.facebook.com\/Youhannamagdy12?mibextid=ZbWKwL", "twiter": "#", "insta": "https:\/\/instagram.com\/youhannamagdyphotography?igshid=ZDdkNTZiNTM=",
+            "tel": "1554405660", "email": "youhnaamagdy12@gmail.com", "created_at": null, "updated_at": null
+        }])
     }, [])
 
     return (
@@ -45,8 +100,8 @@ function Footer(api) {
                                             {companySetting.map((Element, index) => (
                                                 <React.Fragment key={index}>
                                                     <div className="logo widget-title m-0">
-                                                        {/*   <img src={api.api + '/storage/app/public/' + Element.image} alt={Element.name} title={Element.name} />*/}
-                                                        <img src='./images/logo.png' alt={Element.name} title={Element.name}   className="p-2"/>
+                                                        {/*   <img src={ '/storage/app/public/' + Element.image} alt={Element.name} title={Element.name} />*/}
+                                                        <img src='./images/logo.png' alt={Element.name} title={Element.name} className="p-2" />
                                                     </div>
                                                     <p className="text-center">
                                                         {Element.notes}
@@ -160,7 +215,7 @@ function Footer(api) {
                                                     <div className="gallery-icon portrait">
                                                         {index < 6 ?
                                                             <img width="150" height="150"
-                                                                src={api.api + '/storage/app/public/' + Element.image}
+                                                                src={'/storage/app/public/' + Element.image}
                                                                 className="attachment-thumbnail size-thumbnail" alt={Element.name} title={Element.name} decoding="async"
                                                                 loading="lazy" />
                                                             : ''}

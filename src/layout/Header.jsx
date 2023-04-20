@@ -15,17 +15,22 @@ function Header(api) {
 
     useEffect(() => {
         // CompanySetting
-        axios.get(`${api.api}/api/companySetting`)
-            .then(function (response) {
-                // handle success
-                setCompanySetting(response.data)
-            })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            })
+        // axios.get(`${api.api}/api/companySetting`)
+        //     .then(function (response) {
+        //         // handle success
+        //         setCompanySetting(response.data)
+        //     })
+        //     .catch(function (error) {
+        //         // handle error
+        //         console.log(error);
+        //     })
+        setCompanySetting([{
+            "id": 1, "name": "Youhnaa Magdy", "image": null,
+            "address": "Shebin El-Kom - Menoufia", "notes": "Behind every moment there is a photo make us remember it",
+            "links": "https:\/\/www.google.com\/maps\/place\/Shibin+el+Kom,+Menofia+Governorate\/@30.5559056,30.9745792,14z\/data=!3m1!4b1!4m6!3m5!1s0x14f7d6f3a7714525:0xc0bc979946137d21!8m2!3d30.5563944!4d31.0048384!16s%2Fg%2F11hdx5my0n", "facebook": "https:\/\/www.facebook.com\/Youhannamagdy12?mibextid=ZbWKwL", "twiter": "#", "insta": "https:\/\/instagram.com\/youhannamagdyphotography?igshid=ZDdkNTZiNTM=",
+            "tel": "1554405660", "email": "youhnaamagdy12@gmail.com", "created_at": null, "updated_at": null
+        }])
     }, [])
-    console.log(api.api)
     return (
         <React.Fragment>
             <div className="preloader" style={{ display: 'none' }}>
@@ -37,7 +42,7 @@ function Header(api) {
                         </div>
                         {companySetting.map((Element, index) => (
                             <React.Fragment key={index}>
-                                {/*   <img src={api.api + '/storage/app/public/' + Element.image} alt={Element.name} title={Element.name} className="p-2" />  */}
+                                {/*   <img src={ '/storage/app/public/' + Element.image} alt={Element.name} title={Element.name} className="p-2" />  */}
                                 <img src='./images/logo.png' alt={Element.name} title={Element.name} className="p-2" />
                             </React.Fragment>
                         ))}
@@ -114,7 +119,7 @@ function Header(api) {
                                         <NavLink className="navbar-brand" to="/">
                                             {companySetting.map((Element, index) => (
                                                 <React.Fragment key={index}>
-                                                    {/*   <img src={api.api + '/storage/app/public/' + Element.image} className='pt-2' alt={Element.name} title={Element.name} key={index} /> */}
+                                                    {/*   <img src={ '/storage/app/public/' + Element.image} className='pt-2' alt={Element.name} title={Element.name} key={index} /> */}
                                                     <img src='./images/logo.png' alt={Element.name} title={Element.name} className="p-2" />
                                                 </React.Fragment>
                                             ))}

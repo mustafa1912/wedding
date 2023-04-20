@@ -4,18 +4,82 @@ import axios from 'axios';
 
 function Price(api) {
     const [price, setPrice] = useState([])
+    const [priceDescription, setPriceDescription] = useState([])
     useEffect(() => {
         // price
-        axios.get(`${api.api}/api/Price`)
-            .then(function (response) {
-                // handle success
-                setPrice(response.data)
-                console.log(price)
-            })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            })
+        // axios.get(`${api.api}/api/Price`)
+        //     .then(function (response) {
+        //         // handle success
+        //         setPrice(response.data)
+        //         console.log(price)
+        //     })
+        //     .catch(function (error) {
+        //         // handle error
+        //         console.log(error);
+        //     })
+        setPrice([
+            {
+                "id": 1, "image": "admin@gmail.com\/wETS3GyqFwJGIYs9y8uOZrwIwiL5doP6bceYVl97.jpg",
+                "name": 'Halfday ', "price": "  3000", "discount": "0", "discount_percentage": null, "notes":
+                    null, "details": null, "created_at": "2023-04-17T22:18:07.000000Z", "updated_at":
+                    "2023-04-17T22:18:07.000000Z"
+            }, {
+                "id": 2, "image": "admin@gmail.com\/lwnGyg1u9tkD9Nx2T2uyVVAEY7Y3hhvkYGIm491v.jpg",
+                "name": 'Fullday', "price": "4000", "discount": "0", "discount_percentage": null, "notes": null, "details": null, "created_at":
+                    "2023-04-17T22:19:31.000000Z", "updated_at": "2023-04-17T22:19:31.000000Z"
+            },
+            {
+                "id": 3, "image": "admin@gmail.com\/emEahvSsTahrOMq6uAf0LTtt0nAChEqDoXHVxZRU.jpg", "name": 'Fullday plus ',
+                "price": "  7000", "discount": "0", "discount_percentage": null, "notes": null, "details": null,
+                "created_at": "2023-04-17T22:20:50.000000Z", "updated_at": "2023-04-17T22:20:50.000000Z"
+            }])
+        setPriceDescription([
+            {
+                "id": 1, "price_id": 1, "notes": "One photographer", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            },
+            {
+                "id": 2, "price_id": 1, "notes": "Photosession", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            },
+            {
+                "id": 3, "price_id": 1, "notes": "Curch shoots(for ch)", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            }
+            ,
+            {
+                "id": 4, "price_id": 2, "notes": "2 photographer", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            },
+            {
+                "id": 5, "price_id": 2, "notes": "Preparation shoots", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            },
+            {
+                "id": 6, "price_id": 2, "notes": "Photosession", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            },
+            {
+                "id": 7, "price_id": 2, "notes": "Curch shoots(for ch)", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            }
+            ,
+            {
+                "id": 8, "price_id": 3, "notes": "2 photographer", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            },
+            {
+                "id": 9, "price_id": 3, "notes": "Promo video", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            }
+            ,
+            {
+                "id": 10, "price_id": 3, "notes": "Preparation shoots ", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            }
+            ,
+            {
+                "id": 11, "price_id": 3, "notes": "Photosession ", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            }
+            ,
+            {
+                "id": 12, "price_id": 3, "notes": "Curch shoots(for ch)", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            }
+            ,
+            {
+                "id": 13, "price_id": 3, "notes": "Party shoots", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
+            }
+        ])
     }, [])
 
     return (
@@ -133,8 +197,9 @@ function Price(api) {
                                                                                                 <div className="img-price">
                                                                                                     <figure>
                                                                                                         <img
-                                                                                                            src={api.api + '/storage/app/public/' + Element.image} className="w-100" decoding="async"
-                                                                                                            alt={Element.name} title={Element.name}
+                                                                                                            src={'/storage/app/public/' + Element.image} className="w-100" decoding="async"
+                                                                                                            alt={Element.name}
+                                                                                                            title={Element.name}
                                                                                                             loading="lazy" />
                                                                                                     </figure>
                                                                                                 </div>
@@ -143,26 +208,26 @@ function Price(api) {
                                                                                                         <li
                                                                                                             className="eltdf-pt-title-holder">
                                                                                                             <span
-                                                                                                                className="eltdf-pt-title"
-                                                                                                            >
+                                                                                                                className="eltdf-pt-title">
                                                                                                                 {Element.name}
                                                                                                             </span>
                                                                                                         </li>
-                                                                                                        <div className="row m-0 align-items-end">
+                                                                                                        <div className="row m-0 align-items-end mt-3">
                                                                                                             <li
-                                                                                                                className="eltdf-pt-content col-6 pe-1">
-                                                                                                                <ul>
-                                                                                                                    <li className="pe-0">   {Element.notes} </li>
-                                                                                                                </ul>
-                                                                                                                <ul>
-                                                                                                                    <li className="pe-0">   {Element.notes} </li>
-                                                                                                                </ul>
-                                                                                                                <ul>
-                                                                                                                    <li className="pe-0">   {Element.notes} </li>
-                                                                                                                </ul>
+                                                                                                                className="eltdf-pt-content col-7 pe-1">
+                                                                                                                {priceDescription.map((ElementDescription, indexDescription) => (
+                                                                                                                    <React.Fragment key={indexDescription}>
+                                                                                                                        {ElementDescription.price_id === Element.id ?
+                                                                                                                            <React.Fragment>
+                                                                                                                                <ul >
+                                                                                                                                    <li className="pe-0"> {ElementDescription.notes} </li>
+                                                                                                                                </ul>
+                                                                                                                            </React.Fragment> : ''}
+                                                                                                                    </React.Fragment>
+                                                                                                                ))}
                                                                                                             </li>
                                                                                                             <li
-                                                                                                                className="eltdf-pt-content col-6 pe-0">
+                                                                                                                className="eltdf-pt-content col-5 pe-0">
                                                                                                                 <li className="eltdf-pt-prices">
                                                                                                                     <div className='d-flex justify-content-center align-items-end mt-3'>
                                                                                                                         {Element.discount * 1 !== 0 ?
@@ -187,7 +252,7 @@ function Price(api) {
                                                                                                         </div>
                                                                                                     </ul>
                                                                                                     <div className=" me-2 ms-2">
-                                                                                                        <p className='text-center p-2 mb-2 text'> plase check the notes show in the laste page</p>
+                                                                                                        <p className='text-center p-2 mb-0 text pb-0'> plase check the notes show in the laste page</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
