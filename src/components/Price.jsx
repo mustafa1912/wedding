@@ -19,17 +19,17 @@ function Price(api) {
         //     })
         setPrice([
             {
-                "id": 1, "image": "admin@gmail.com\/wETS3GyqFwJGIYs9y8uOZrwIwiL5doP6bceYVl97.jpg",
+                "id": 1, "image": "/wETS3GyqFwJGIYs9y8uOZrwIwiL5doP6bceYVl97.jpg",
                 "name": 'Halfday ', "price": "  3000", "discount": "0", "discount_percentage": null, "notes":
                     null, "details": null, "created_at": "2023-04-17T22:18:07.000000Z", "updated_at":
                     "2023-04-17T22:18:07.000000Z"
             }, {
-                "id": 2, "image": "admin@gmail.com\/lwnGyg1u9tkD9Nx2T2uyVVAEY7Y3hhvkYGIm491v.jpg",
+                "id": 2, "image": "/lwnGyg1u9tkD9Nx2T2uyVVAEY7Y3hhvkYGIm491v.jpg",
                 "name": 'Fullday', "price": "4000", "discount": "0", "discount_percentage": null, "notes": null, "details": null, "created_at":
                     "2023-04-17T22:19:31.000000Z", "updated_at": "2023-04-17T22:19:31.000000Z"
             },
             {
-                "id": 3, "image": "admin@gmail.com\/emEahvSsTahrOMq6uAf0LTtt0nAChEqDoXHVxZRU.jpg", "name": 'Fullday plus ',
+                "id": 3, "image": "/emEahvSsTahrOMq6uAf0LTtt0nAChEqDoXHVxZRU.jpg", "name": 'Fullday plus ',
                 "price": "  7000", "discount": "0", "discount_percentage": null, "notes": null, "details": null,
                 "created_at": "2023-04-17T22:20:50.000000Z", "updated_at": "2023-04-17T22:20:50.000000Z"
             }])
@@ -197,7 +197,7 @@ function Price(api) {
                                                                                                 <div className="img-price">
                                                                                                     <figure>
                                                                                                         <img
-                                                                                                            src={'/storage/app/public/' + Element.image} className="w-100" decoding="async"
+                                                                                                            src={'/storage' + Element.image} className="w-100" decoding="async"
                                                                                                             alt={Element.name}
                                                                                                             title={Element.name}
                                                                                                             loading="lazy" />

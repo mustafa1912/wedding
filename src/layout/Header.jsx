@@ -42,7 +42,7 @@ function Header(api) {
                         </div>
                         {companySetting.map((Element, index) => (
                             <React.Fragment key={index}>
-                                {/*   <img src={ '/storage/app/public/' + Element.image} alt={Element.name} title={Element.name} className="p-2" />  */}
+                                {/*   <img src={ '/storage' + Element.image} alt={Element.name} title={Element.name} className="p-2" />  */}
                                 <img src='./images/logo.png' alt={Element.name} title={Element.name} className="p-2" />
                             </React.Fragment>
                         ))}
@@ -119,7 +119,7 @@ function Header(api) {
                                         <NavLink className="navbar-brand" to="/">
                                             {companySetting.map((Element, index) => (
                                                 <React.Fragment key={index}>
-                                                    {/*   <img src={ '/storage/app/public/' + Element.image} className='pt-2' alt={Element.name} title={Element.name} key={index} /> */}
+                                                    {/*   <img src={ '/storage' + Element.image} className='pt-2' alt={Element.name} title={Element.name} key={index} /> */}
                                                     <img src='./images/logo.png' alt={Element.name} title={Element.name} className="p-2" />
                                                 </React.Fragment>
                                             ))}
