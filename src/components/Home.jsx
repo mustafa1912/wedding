@@ -105,7 +105,7 @@ function Home(api) {
             }
         },
     };
-    console.log(slider)
+    console.log(`${api.api}/api/slider`)
     return (
         <React.Fragment>
             <div
