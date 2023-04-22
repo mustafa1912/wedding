@@ -276,8 +276,8 @@ function Home(api) {
                                                                                             <img
                                                                                                 decoding="async"
                                                                                                 src={'/storage' + Element.image}
-                                                                                                alt={Element.name}
-                                                                                                title={Element.name}
+                                                                                                alt={Element.address}
+                                                                                                title={Element.address}
                                                                                             />
                                                                                         </div>
                                                                                     </div>
@@ -293,12 +293,12 @@ function Home(api) {
                                                                                                 animationIterationCount: 'infinite',
                                                                                                 // animationDelay:'5s',
                                                                                             }}>
-                                                                                            <div className="wpo-about-img">
+                                                                                            <div className="wpo-about-img 00">
                                                                                                 <img
                                                                                                     decoding="async"
                                                                                                     src={'/storage' + Element.image}
-                                                                                                    alt={Element.name}
-                                                                                                    title={Element.name}
+                                                                                                    alt={Element.address}
+                                                                                                    title={Element.address}
                                                                                                 />
                                                                                             </div>
                                                                                         </div>
