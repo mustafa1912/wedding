@@ -359,8 +359,7 @@ function Home(api) {
                                     <div className="elementor-widget-container mt-5">
                                         <div className="wpo-section-area">
                                             <div className="wpo-section-title">
-                                                <span>Wedding Ceremony</span>
-                                                <h2>Celebrating Your Love</h2>
+                                                 <h2>Every picture tells a story</h2>
                                                 <div className="section-title-img">
                                                     <img
                                                         decoding="async"
