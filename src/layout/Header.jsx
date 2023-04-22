@@ -77,25 +77,25 @@ function Header(api) {
                                     <ul className="clearfix">
                                         {companySetting.map((Element, index) => (
                                             <React.Fragment key={index}>
-                                                <a href={Element.facebook} target="_blank" rel="noreferrer"><i
+                                                <a href={Element.facebook} target="_blank" rel="noreferrer" aria-label="facebook"><i
                                                     className="fi flaticon-facebook-app-symbol" ></i></a>
                                             </React.Fragment>
                                         ))}
                                         {companySetting.map((Element, index) => (
                                             <React.Fragment key={index}>
-                                                <a href={Element.insta} target="_blank" rel="noreferrer"><i
+                                                <a href={Element.insta} target="_blank" rel="noreferrer" aria-label="instagram"><i
                                                     className="fi flaticon-instagram-1" ></i></a>
                                             </React.Fragment>
                                         ))}
                                         {companySetting.map((Element, index) => (
                                             <React.Fragment key={index}>
-                                                <a href={'https://wa.me/' + Element.tel} target="_blank" rel="noreferrer"><i
+                                                <a href={'https://wa.me/' + Element.tel} target="_blank" rel="noreferrer" aria-label="whatsapp"><i
                                                     className="fab fa-whatsapp"></i></a>
                                             </React.Fragment>
                                         ))}
                                         {companySetting.map((Element, index) => (
                                             <React.Fragment key={index}>
-                                                <a href={"tel:" + Element.tel} rel="noreferrer"><i
+                                                <a href={"tel:" + Element.tel} rel="noreferrer" aria-label="phone"><i
                                                     className="flaticon-phone-call"></i></a>
                                             </React.Fragment>
                                         ))}

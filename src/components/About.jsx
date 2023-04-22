@@ -369,6 +369,7 @@ function About() {
                                                                                                             className=""
                                                                                                             href="https://www.instagram.com/qodeinteractive/"
                                                                                                             target="_blank" rel="noreferrer"
+                                                                                                            aria-label="instagram"
                                                                                                         >
                                                                                                             <span
                                                                                                                 aria-hidden="true"
@@ -401,6 +402,7 @@ function About() {
                                                                                                             className=""
                                                                                                             href="https://www.facebook.com/QodeInteractive/"
                                                                                                             target="_blank" rel="noreferrer"
+                                                                                                            aria-label="facebook"
                                                                                                         >
                                                                                                             <span
                                                                                                                 aria-hidden="true"
@@ -546,6 +548,7 @@ function About() {
                                                                                                             className=""
                                                                                                             href="https://www.instagram.com/qodeinteractive/"
                                                                                                             target="_blank" rel="noreferrer"
+                                                                                                            aria-label="instagram"
                                                                                                         >
                                                                                                             <span
                                                                                                                 aria-hidden="true"
@@ -578,6 +581,7 @@ function About() {
                                                                                                             className=""
                                                                                                             href="https://www.facebook.com/QodeInteractive/"
                                                                                                             target="_blank" rel="noreferrer"
+                                                                                                            aria-label="facebook"
                                                                                                         >
                                                                                                             <span
                                                                                                                 aria-hidden="true"
@@ -724,6 +728,7 @@ function About() {
                                                                                                             className=""
                                                                                                             href="https://www.instagram.com/qodeinteractive/"
                                                                                                             target="_blank" rel="noreferrer"
+                                                                                                            aria-label="instagram"
                                                                                                         >
                                                                                                             <span
                                                                                                                 aria-hidden="true"
@@ -756,6 +761,7 @@ function About() {
                                                                                                             className=""
                                                                                                             href="https://www.facebook.com/QodeInteractive/"
                                                                                                             target="_blank" rel="noreferrer"
+                                                                                                            aria-label="facebook"
                                                                                                         >
                                                                                                             <span
                                                                                                                 aria-hidden="true"
@@ -902,6 +908,7 @@ function About() {
                                                                                                             className=""
                                                                                                             href="https://www.instagram.com/qodeinteractive/"
                                                                                                             target="_blank" rel="noreferrer"
+                                                                                                            aria-label="instagram"
                                                                                                         >
                                                                                                             <span
                                                                                                                 aria-hidden="true"

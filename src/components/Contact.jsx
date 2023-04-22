@@ -199,6 +199,7 @@ function Contact(api) {
                                                                 itemProp="url"
                                                                 href="https://www.facebook.com/Youhannamagdy12?mibextid=ZbWKwL"
                                                                 target="_blank" rel="noreferrer"
+                                                                aria-label="facebook"
                                                               >
                                                                 <span
                                                                   className="eltdf-iwt-title-text"
@@ -253,6 +254,7 @@ function Contact(api) {
                                                                 itemProp="url"
                                                                 href="https://www.instagram.com/youhannamagdyphotography/?igshid=ZDdkNTZiNTM="
                                                                 target="_blank" rel="noreferrer"
+                                                                aria-label="instagram"
                                                               >
                                                                 <span
                                                                   className="eltdf-iwt-title-text"
