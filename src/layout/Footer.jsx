@@ -31,52 +31,52 @@ function Footer(api) {
         //     })
         setPortfolio(
             [{
-                "id": 10, "main_address": "american garden halls", "image": "/bq6UAL1vS82ZlqArnj6ZaitNZsYSTZvDe9gENWTt.jpg", "category":
+                "id": 10, "main_address": "american garden halls", "image": "/bq6UAL1vS82ZlqArnj6ZaitNZsYSTZvDe9gENWTt.webp", "category":
                     "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:31:07.000000Z", "updated_at": "2023-04-17T22:31:07.000000Z"
             },
             {
-                "id": 11, "main_address": "american garden halls", "image": "/2irHvMzIpA1MKmjn2fHwVUxFGVzTw53Gf2jxwlp7.jpg",
+                "id": 11, "main_address": "american garden halls", "image": "/2irHvMzIpA1MKmjn2fHwVUxFGVzTw53Gf2jxwlp7.webp",
                 "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:31:29.000000Z", "updated_at": "2023-04-17T22:31:29.000000Z"
             },
             {
-                "id": 12, "main_address": "american garden halls", "image": "/Tuj3Yx0HII3FyJrMePW9dimFqZbrCGW7zFV4YdII.jpg", "category": "Mina & Mariam",
+                "id": 12, "main_address": "american garden halls", "image": "/Tuj3Yx0HII3FyJrMePW9dimFqZbrCGW7zFV4YdII.webp", "category": "Mina & Mariam",
                 "date": "2023-02-01", "created_at": "2023-04-17T22:31:42.000000Z", "updated_at": "2023-04-17T22:31:42.000000Z"
             }, {
                 "id": 13, "main_address": "american garden halls",
-                "image": "/1Q3na6qQYa2VG7ChcMR6q89y6rGkdIYfzPtxeBV6.jpg", "category": "Mina & Mariam", "date":
+                "image": "/1Q3na6qQYa2VG7ChcMR6q89y6rGkdIYfzPtxeBV6.webp", "category": "Mina & Mariam", "date":
                     "2023-02-01", "created_at": "2023-04-17T22:31:57.000000Z", "updated_at": "2023-04-17T22:31:57.000000Z"
             }, {
                 "id": 14,
-                "main_address": "american garden halls", "image": "/e6rhP9bLw5Hp4e2cuRBOfixngZjUptEehNU3npn8.jpg", "category":
+                "main_address": "american garden halls", "image": "/e6rhP9bLw5Hp4e2cuRBOfixngZjUptEehNU3npn8.webp", "category":
                     "Mina & Mariam", "date": "2023-02-18", "created_at": "2023-04-17T22:32:18.000000Z", "updated_at": "2023-04-17T22:32:18.000000Z"
             },
             {
-                "id": 15, "main_address": "american garden halls", "image": "/MrLKA6mRB320u1RGXfUmvn0nS3vwILw5H5ML4j8Z.jpg",
+                "id": 15, "main_address": "american garden halls", "image": "/MrLKA6mRB320u1RGXfUmvn0nS3vwILw5H5ML4j8Z.webp",
                 "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:32:37.000000Z", "updated_at": "2023-04-17T22:32:37.000000Z"
             },
             {
-                "id": 16, "main_address": "american garden halls", "image": "/bTiZesbFlkOdWWD03VUqQwKruE5boOReUfJPDFdu.jpg", "category": "Mina & Mariam",
+                "id": 16, "main_address": "american garden halls", "image": "/bTiZesbFlkOdWWD03VUqQwKruE5boOReUfJPDFdu.webp", "category": "Mina & Mariam",
                 "date": "2023-02-01", "created_at": "2023-04-17T22:32:50.000000Z", "updated_at": "2023-04-17T22:32:50.000000Z"
             }, {
                 "id": 17, "main_address": "american garden halls",
-                "image": "/NurS9fkwdZkSQHA7TFhFvimXVGSVPG9xxHvS4GGX.jpg", "category": "Mina & Mariam", "date": "2023-02-01",
+                "image": "/NurS9fkwdZkSQHA7TFhFvimXVGSVPG9xxHvS4GGX.webp", "category": "Mina & Mariam", "date": "2023-02-01",
                 "created_at": "2023-04-17T22:33:00.000000Z", "updated_at": "2023-04-17T22:33:00.000000Z"
             }, {
                 "id": 18, "main_address": "american garden halls",
-                "image": "/2NhLotdflxk7MgoLa9zAkNl49o6ewRd1HwKyT4yw.jpg", "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:33:16.000000Z", "updated_at": "2023-04-17T22:33:16.000000Z"
+                "image": "/2NhLotdflxk7MgoLa9zAkNl49o6ewRd1HwKyT4yw.webp", "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:33:16.000000Z", "updated_at": "2023-04-17T22:33:16.000000Z"
             }, {
                 "id": 19, "main_address": "american garden halls",
-                "image": "/emD65nonXdWxcvU8mNzIsHe1MD1FuXkEjH4mfFHz.jpg", "category": "Mina & Mariam", "date": "2023-04-01",
+                "image": "/emD65nonXdWxcvU8mNzIsHe1MD1FuXkEjH4mfFHz.webp", "category": "Mina & Mariam", "date": "2023-04-01",
                 "created_at": "2023-04-17T22:33:29.000000Z", "updated_at": "2023-04-17T22:33:29.000000Z"
             }, {
                 "id": 20, "main_address": "american garden halls",
-                "image": "/xabQoD20EaIVMWJgyNLAiKUFSaHPB5odd3Nqw1D7.jpg", "category": "Mina & Mariam", "date": "2023-04-01", "created_at":
+                "image": "/xabQoD20EaIVMWJgyNLAiKUFSaHPB5odd3Nqw1D7.webp", "category": "Mina & Mariam", "date": "2023-04-01", "created_at":
                     "2023-04-17T22:34:56.000000Z", "updated_at": "2023-04-17T22:34:56.000000Z"
             }, {
                 "id": 21, "main_address": "daba"
-                , "image": "/WvQIjeIVHfUyMTOw6ieQDReLU9lPOxaX3RzqvGJH.jpg", "category": "Andrew & Mariam", "date":
+                , "image": "/WvQIjeIVHfUyMTOw6ieQDReLU9lPOxaX3RzqvGJH.webp", "category": "Andrew & Mariam", "date":
                     "2023-03-20", "created_at": "2023-04-17T22:35:14.000000Z", "updated_at": "2023-04-17T22:35:14.000000Z"
-            }, { "id": 22, "main_address": "daba", "image": "/hv2XJ4MMLMKbLYf9IaUrE8qK8bgAyhSXrnP7gWv3.jpg", "category": "Andrew & Mariam", "date": "2023-03-20", "created_at": "2023-04-17T22:35:28.000000Z", "updated_at": "2023-04-17T22:35:28.000000Z" }, { "id": 23, "main_address": "florenta location", "image": "/WwR6Cb47gDn4vJ4SfjQyWj7FqrSTBja1f3VJvhxR.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:36:29.000000Z", "updated_at": "2023-04-17T22:36:29.000000Z" }, { "id": 24, "main_address": "florenta location", "image": "/OzR48daoKPGWRSIzcufK9B1pTa3OzRBfovcs3Rv0.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:36:44.000000Z", "updated_at": "2023-04-17T22:36:44.000000Z" }, { "id": 25, "main_address": "florenta location", "image": "/DwTUuD6Bzpdu8S4w5ZwOE6hiPLz460ZytHFBczC1.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:00.000000Z", "updated_at": "2023-04-17T22:37:00.000000Z" }, { "id": 26, "main_address": "florenta location", "image": "/u05lGMcFigWa1bxtLgrhDe0RURnqBMnreIccRSIN.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:18.000000Z", "updated_at": "2023-04-17T22:37:18.000000Z" }, { "id": 27, "main_address": "florenta location", "image": "/8xLICFlZO0srLk8krl55t9CSpitbp3b2AISsLYLi.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:34.000000Z", "updated_at": "2023-04-17T22:37:34.000000Z" }, { "id": 28, "main_address": "florenta location", "image": "/IMCtFe2OZNYvpyqDiaeS6iz51goLZk1II9RtBEdZ.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:47.000000Z", "updated_at": "2023-04-17T22:37:47.000000Z" }, { "id": 29, "main_address": "florenta location", "image": "/5R8cRqv30y0leE5iLzD2lUFDCpN3oc4cKvAWsAfJ.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:38:11.000000Z", "updated_at": "2023-04-17T22:38:11.000000Z" }, { "id": 30, "main_address": "florenta location", "image": "/RJpItLrcabYJQQ0dL2F4N5i8KEeIns4kHCwRhcTz.jpg", "category": "mikhael & marina", "date": "2023-01-01", "created_at": "2023-04-17T22:39:11.000000Z", "updated_at": "2023-04-17T22:39:11.000000Z" }]
+            }, { "id": 22, "main_address": "daba", "image": "/hv2XJ4MMLMKbLYf9IaUrE8qK8bgAyhSXrnP7gWv3.webp", "category": "Andrew & Mariam", "date": "2023-03-20", "created_at": "2023-04-17T22:35:28.000000Z", "updated_at": "2023-04-17T22:35:28.000000Z" }, { "id": 23, "main_address": "florenta location", "image": "/WwR6Cb47gDn4vJ4SfjQyWj7FqrSTBja1f3VJvhxR.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:36:29.000000Z", "updated_at": "2023-04-17T22:36:29.000000Z" }, { "id": 24, "main_address": "florenta location", "image": "/OzR48daoKPGWRSIzcufK9B1pTa3OzRBfovcs3Rv0.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:36:44.000000Z", "updated_at": "2023-04-17T22:36:44.000000Z" }, { "id": 25, "main_address": "florenta location", "image": "/DwTUuD6Bzpdu8S4w5ZwOE6hiPLz460ZytHFBczC1.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:00.000000Z", "updated_at": "2023-04-17T22:37:00.000000Z" }, { "id": 26, "main_address": "florenta location", "image": "/u05lGMcFigWa1bxtLgrhDe0RURnqBMnreIccRSIN.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:18.000000Z", "updated_at": "2023-04-17T22:37:18.000000Z" }, { "id": 27, "main_address": "florenta location", "image": "/8xLICFlZO0srLk8krl55t9CSpitbp3b2AISsLYLi.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:34.000000Z", "updated_at": "2023-04-17T22:37:34.000000Z" }, { "id": 28, "main_address": "florenta location", "image": "/IMCtFe2OZNYvpyqDiaeS6iz51goLZk1II9RtBEdZ.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:47.000000Z", "updated_at": "2023-04-17T22:37:47.000000Z" }, { "id": 29, "main_address": "florenta location", "image": "/5R8cRqv30y0leE5iLzD2lUFDCpN3oc4cKvAWsAfJ.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:38:11.000000Z", "updated_at": "2023-04-17T22:38:11.000000Z" }, { "id": 30, "main_address": "florenta location", "image": "/RJpItLrcabYJQQ0dL2F4N5i8KEeIns4kHCwRhcTz.webp", "category": "mikhael & marina", "date": "2023-01-01", "created_at": "2023-04-17T22:39:11.000000Z", "updated_at": "2023-04-17T22:39:11.000000Z" }]
         )
         setCompanySetting([{
             "id": 1, "name": "Youhnaa Magdy", "image": null,

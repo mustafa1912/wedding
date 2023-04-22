@@ -142,7 +142,7 @@ function About() {
                                                                                         <img
                                                                                             width="951"
                                                                                             height="532"
-                                                                                            src="./images/pricing-img-1.png"
+                                                                                            src="./images/pricing-img-1.webp"
                                                                                             className="attachment-full size-full"
                                                                                             alt="i"
                                                                                             decoding="async"
@@ -201,7 +201,7 @@ function About() {
                                                                                             <img
                                                                                                 width="55"
                                                                                                 height="63"
-                                                                                                src="./images/section-title-img-1.png"
+                                                                                                src="./images/section-title-img-1.webp"
                                                                                                 className="attachment-full size-full"
                                                                                                 alt="a"
                                                                                                 decoding="async"

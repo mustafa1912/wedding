@@ -84,82 +84,82 @@ function Home(api) {
         //     })
         setSlider([
             {
-                "address": "Efficiency", "image": "/76avRXe1zE2PDUY1SyceQBbLIvHmBjrwPn0jvyN3.jpg",
+                "address": "Efficiency", "image": "/76avRXe1zE2PDUY1SyceQBbLIvHmBjrwPn0jvyN3.webp",
                 "notes": "Capture beautiful moments and minute details of special events.",
                 "id": 1, "created_at": "2023-04-17T23:26:01.000000Z", "updated_at": "2023-04-17T23:26:01.000000Z"
             },
             {
-                "address": "the quality", "image": "/Kk8sB4D0q1x3uFd4Qwof8xIWAp2wEZ5H4j5aLVj0.jpg",
+                "address": "the quality", "image": "/Kk8sB4D0q1x3uFd4Qwof8xIWAp2wEZ5H4j5aLVj0.webp",
                 "notes": "We use high quality images to showcase the latest work of our photographers",
                 "id": 2, "created_at": "2023-04-17T23:26:53.000000Z", "updated_at": "2023-04-17T23:26:53.000000Z"
             }])
         setPortfolio(
             [{
-                "id": 10, "main_address": "american garden halls", "image": "/bq6UAL1vS82ZlqArnj6ZaitNZsYSTZvDe9gENWTt.jpg", "category":
+                "id": 10, "main_address": "american garden halls", "image": "/bq6UAL1vS82ZlqArnj6ZaitNZsYSTZvDe9gENWTt.webp", "category":
                     "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:31:07.000000Z", "updated_at": "2023-04-17T22:31:07.000000Z"
             },
             {
-                "id": 11, "main_address": "american garden halls", "image": "/2irHvMzIpA1MKmjn2fHwVUxFGVzTw53Gf2jxwlp7.jpg",
+                "id": 11, "main_address": "american garden halls", "image": "/2irHvMzIpA1MKmjn2fHwVUxFGVzTw53Gf2jxwlp7.webp",
                 "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:31:29.000000Z", "updated_at": "2023-04-17T22:31:29.000000Z"
             },
             {
-                "id": 12, "main_address": "american garden halls", "image": "/Tuj3Yx0HII3FyJrMePW9dimFqZbrCGW7zFV4YdII.jpg", "category": "Mina & Mariam",
+                "id": 12, "main_address": "american garden halls", "image": "/Tuj3Yx0HII3FyJrMePW9dimFqZbrCGW7zFV4YdII.webp", "category": "Mina & Mariam",
                 "date": "2023-02-01", "created_at": "2023-04-17T22:31:42.000000Z", "updated_at": "2023-04-17T22:31:42.000000Z"
             }, {
                 "id": 13, "main_address": "american garden halls",
-                "image": "/1Q3na6qQYa2VG7ChcMR6q89y6rGkdIYfzPtxeBV6.jpg", "category": "Mina & Mariam", "date":
+                "image": "/1Q3na6qQYa2VG7ChcMR6q89y6rGkdIYfzPtxeBV6.webp", "category": "Mina & Mariam", "date":
                     "2023-02-01", "created_at": "2023-04-17T22:31:57.000000Z", "updated_at": "2023-04-17T22:31:57.000000Z"
             }, {
                 "id": 14,
-                "main_address": "american garden halls", "image": "/e6rhP9bLw5Hp4e2cuRBOfixngZjUptEehNU3npn8.jpg", "category":
+                "main_address": "american garden halls", "image": "/e6rhP9bLw5Hp4e2cuRBOfixngZjUptEehNU3npn8.webp", "category":
                     "Mina & Mariam", "date": "2023-02-18", "created_at": "2023-04-17T22:32:18.000000Z", "updated_at": "2023-04-17T22:32:18.000000Z"
             },
             {
-                "id": 15, "main_address": "american garden halls", "image": "/MrLKA6mRB320u1RGXfUmvn0nS3vwILw5H5ML4j8Z.jpg",
+                "id": 15, "main_address": "american garden halls", "image": "/MrLKA6mRB320u1RGXfUmvn0nS3vwILw5H5ML4j8Z.webp",
                 "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:32:37.000000Z", "updated_at": "2023-04-17T22:32:37.000000Z"
             },
             {
-                "id": 16, "main_address": "american garden halls", "image": "/bTiZesbFlkOdWWD03VUqQwKruE5boOReUfJPDFdu.jpg", "category": "Mina & Mariam",
+                "id": 16, "main_address": "american garden halls", "image": "/bTiZesbFlkOdWWD03VUqQwKruE5boOReUfJPDFdu.webp", "category": "Mina & Mariam",
                 "date": "2023-02-01", "created_at": "2023-04-17T22:32:50.000000Z", "updated_at": "2023-04-17T22:32:50.000000Z"
             }, {
                 "id": 17, "main_address": "american garden halls",
-                "image": "/NurS9fkwdZkSQHA7TFhFvimXVGSVPG9xxHvS4GGX.jpg", "category": "Mina & Mariam", "date": "2023-02-01",
+                "image": "/NurS9fkwdZkSQHA7TFhFvimXVGSVPG9xxHvS4GGX.webp", "category": "Mina & Mariam", "date": "2023-02-01",
                 "created_at": "2023-04-17T22:33:00.000000Z", "updated_at": "2023-04-17T22:33:00.000000Z"
             }, {
                 "id": 18, "main_address": "american garden halls",
-                "image": "/2NhLotdflxk7MgoLa9zAkNl49o6ewRd1HwKyT4yw.jpg", "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:33:16.000000Z", "updated_at": "2023-04-17T22:33:16.000000Z"
+                "image": "/2NhLotdflxk7MgoLa9zAkNl49o6ewRd1HwKyT4yw.webp", "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:33:16.000000Z", "updated_at": "2023-04-17T22:33:16.000000Z"
             }, {
                 "id": 19, "main_address": "american garden halls",
-                "image": "/emD65nonXdWxcvU8mNzIsHe1MD1FuXkEjH4mfFHz.jpg", "category": "Mina & Mariam", "date": "2023-04-01",
+                "image": "/emD65nonXdWxcvU8mNzIsHe1MD1FuXkEjH4mfFHz.webp", "category": "Mina & Mariam", "date": "2023-04-01",
                 "created_at": "2023-04-17T22:33:29.000000Z", "updated_at": "2023-04-17T22:33:29.000000Z"
             }, {
                 "id": 20, "main_address": "american garden halls",
-                "image": "/xabQoD20EaIVMWJgyNLAiKUFSaHPB5odd3Nqw1D7.jpg", "category": "Mina & Mariam", "date": "2023-04-01", "created_at":
+                "image": "/xabQoD20EaIVMWJgyNLAiKUFSaHPB5odd3Nqw1D7.webp", "category": "Mina & Mariam", "date": "2023-04-01", "created_at":
                     "2023-04-17T22:34:56.000000Z", "updated_at": "2023-04-17T22:34:56.000000Z"
             }, {
                 "id": 21, "main_address": "daba"
-                , "image": "/WvQIjeIVHfUyMTOw6ieQDReLU9lPOxaX3RzqvGJH.jpg", "category": "Andrew & Mariam", "date":
+                , "image": "/WvQIjeIVHfUyMTOw6ieQDReLU9lPOxaX3RzqvGJH.webp", "category": "Andrew & Mariam", "date":
                     "2023-03-20", "created_at": "2023-04-17T22:35:14.000000Z", "updated_at": "2023-04-17T22:35:14.000000Z"
-            }, { "id": 22, "main_address": "daba", "image": "/hv2XJ4MMLMKbLYf9IaUrE8qK8bgAyhSXrnP7gWv3.jpg", "category": "Andrew & Mariam", "date": "2023-03-20", "created_at": "2023-04-17T22:35:28.000000Z", "updated_at": "2023-04-17T22:35:28.000000Z" }, { "id": 23, "main_address": "florenta location", "image": "/WwR6Cb47gDn4vJ4SfjQyWj7FqrSTBja1f3VJvhxR.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:36:29.000000Z", "updated_at": "2023-04-17T22:36:29.000000Z" }, { "id": 24, "main_address": "florenta location", "image": "/OzR48daoKPGWRSIzcufK9B1pTa3OzRBfovcs3Rv0.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:36:44.000000Z", "updated_at": "2023-04-17T22:36:44.000000Z" }, { "id": 25, "main_address": "florenta location", "image": "/DwTUuD6Bzpdu8S4w5ZwOE6hiPLz460ZytHFBczC1.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:00.000000Z", "updated_at": "2023-04-17T22:37:00.000000Z" }, { "id": 26, "main_address": "florenta location", "image": "/u05lGMcFigWa1bxtLgrhDe0RURnqBMnreIccRSIN.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:18.000000Z", "updated_at": "2023-04-17T22:37:18.000000Z" }, { "id": 27, "main_address": "florenta location", "image": "/8xLICFlZO0srLk8krl55t9CSpitbp3b2AISsLYLi.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:34.000000Z", "updated_at": "2023-04-17T22:37:34.000000Z" }, { "id": 28, "main_address": "florenta location", "image": "/IMCtFe2OZNYvpyqDiaeS6iz51goLZk1II9RtBEdZ.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:47.000000Z", "updated_at": "2023-04-17T22:37:47.000000Z" }, { "id": 29, "main_address": "florenta location", "image": "/5R8cRqv30y0leE5iLzD2lUFDCpN3oc4cKvAWsAfJ.jpg", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:38:11.000000Z", "updated_at": "2023-04-17T22:38:11.000000Z" }, { "id": 30, "main_address": "florenta location", "image": "/RJpItLrcabYJQQ0dL2F4N5i8KEeIns4kHCwRhcTz.jpg", "category": "mikhael & marina", "date": "2023-01-01", "created_at": "2023-04-17T22:39:11.000000Z", "updated_at": "2023-04-17T22:39:11.000000Z" }]
+            }, { "id": 22, "main_address": "daba", "image": "/hv2XJ4MMLMKbLYf9IaUrE8qK8bgAyhSXrnP7gWv3.webp", "category": "Andrew & Mariam", "date": "2023-03-20", "created_at": "2023-04-17T22:35:28.000000Z", "updated_at": "2023-04-17T22:35:28.000000Z" }, { "id": 23, "main_address": "florenta location", "image": "/WwR6Cb47gDn4vJ4SfjQyWj7FqrSTBja1f3VJvhxR.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:36:29.000000Z", "updated_at": "2023-04-17T22:36:29.000000Z" }, { "id": 24, "main_address": "florenta location", "image": "/OzR48daoKPGWRSIzcufK9B1pTa3OzRBfovcs3Rv0.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:36:44.000000Z", "updated_at": "2023-04-17T22:36:44.000000Z" }, { "id": 25, "main_address": "florenta location", "image": "/DwTUuD6Bzpdu8S4w5ZwOE6hiPLz460ZytHFBczC1.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:00.000000Z", "updated_at": "2023-04-17T22:37:00.000000Z" }, { "id": 26, "main_address": "florenta location", "image": "/u05lGMcFigWa1bxtLgrhDe0RURnqBMnreIccRSIN.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:18.000000Z", "updated_at": "2023-04-17T22:37:18.000000Z" }, { "id": 27, "main_address": "florenta location", "image": "/8xLICFlZO0srLk8krl55t9CSpitbp3b2AISsLYLi.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:34.000000Z", "updated_at": "2023-04-17T22:37:34.000000Z" }, { "id": 28, "main_address": "florenta location", "image": "/IMCtFe2OZNYvpyqDiaeS6iz51goLZk1II9RtBEdZ.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:47.000000Z", "updated_at": "2023-04-17T22:37:47.000000Z" }, { "id": 29, "main_address": "florenta location", "image": "/5R8cRqv30y0leE5iLzD2lUFDCpN3oc4cKvAWsAfJ.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:38:11.000000Z", "updated_at": "2023-04-17T22:38:11.000000Z" }, { "id": 30, "main_address": "florenta location", "image": "/RJpItLrcabYJQQ0dL2F4N5i8KEeIns4kHCwRhcTz.webp", "category": "mikhael & marina", "date": "2023-01-01", "created_at": "2023-04-17T22:39:11.000000Z", "updated_at": "2023-04-17T22:39:11.000000Z" }]
         )
         setPrice([
             {
-                "id": 1, "image": "/wETS3GyqFwJGIYs9y8uOZrwIwiL5doP6bceYVl97.jpg",
+                "id": 1, "image": "/wETS3GyqFwJGIYs9y8uOZrwIwiL5doP6bceYVl97.webp",
                 "name": 'Halfday ', "price": "  3000", "discount": "0", "discount_percentage": null, "notes":
                     null, "details": null, "created_at": "2023-04-17T22:18:07.000000Z", "updated_at":
                     "2023-04-17T22:18:07.000000Z"
             }, {
-                "id": 2, "image": "/lwnGyg1u9tkD9Nx2T2uyVVAEY7Y3hhvkYGIm491v.jpg",
+                "id": 2, "image": "/lwnGyg1u9tkD9Nx2T2uyVVAEY7Y3hhvkYGIm491v.webp",
                 "name": 'Fullday', "price": "4000", "discount": "0", "discount_percentage": null, "notes": null, "details": null, "created_at":
                     "2023-04-17T22:19:31.000000Z", "updated_at": "2023-04-17T22:19:31.000000Z"
             },
             {
-                "id": 3, "image": "/emEahvSsTahrOMq6uAf0LTtt0nAChEqDoXHVxZRU.jpg", "name": 'Fullday plus ',
+                "id": 3, "image": "/emEahvSsTahrOMq6uAf0LTtt0nAChEqDoXHVxZRU.webp", "name": 'Fullday plus ',
                 "price": "  7000", "discount": "0", "discount_percentage": null, "notes": null, "details": null,
                 "created_at": "2023-04-17T22:20:50.000000Z", "updated_at": "2023-04-17T22:20:50.000000Z"
             }])
-        setClient([{ "id": 1, "image": "/JTyXLm6te1BVzv8uPApkJg2YgLeGQ9avxW3tw6Xh.jpg", "name": "mikhael & marina", "address": "0", "notes": "This is not only a wedding planning agency but also a dreamy friend. I am very glad to work with them. They make my dream come true. In my wedding  I found them as my best friends. ", "created_at": "2023-04-17T23:07:07.000000Z", "updated_at": "2023-04-17T23:13:21.000000Z" }, { "id": 2, "image": "/DsBi6eKXOLIcf2pseOgp9sVruGToAqCiMLE8g5kj.jpg", "name": "Andrew & Mariam", "address": "0", "notes": "Andrew & Mariam", "created_at": "2023-04-17T23:08:13.000000Z", "updated_at": "2023-04-17T23:13:29.000000Z" }, {
-            "id": 3, "image": "/BtqaJvRy1Psieb1HjM6U0aymu2ufIN5vmtn197lL.jpg", "name": "wassiem & eva", "address": "", "notes": "This is not only a wedding planning agency but also a dreamy friend. I am very glad to work with them. They make my dream come true. In my wedding  I found them as my best friends. ",
+        setClient([{ "id": 1, "image": "/JTyXLm6te1BVzv8uPApkJg2YgLeGQ9avxW3tw6Xh.webp", "name": "mikhael & marina", "address": "0", "notes": "This is not only a wedding planning agency but also a dreamy friend. I am very glad to work with them. They make my dream come true. In my wedding  I found them as my best friends. ", "created_at": "2023-04-17T23:07:07.000000Z", "updated_at": "2023-04-17T23:13:21.000000Z" }, { "id": 2, "image": "/DsBi6eKXOLIcf2pseOgp9sVruGToAqCiMLE8g5kj.webp", "name": "Andrew & Mariam", "address": "0", "notes": "Andrew & Mariam", "created_at": "2023-04-17T23:08:13.000000Z", "updated_at": "2023-04-17T23:13:29.000000Z" }, {
+            "id": 3, "image": "/BtqaJvRy1Psieb1HjM6U0aymu2ufIN5vmtn197lL.webp", "name": "wassiem & eva", "address": "", "notes": "This is not only a wedding planning agency but also a dreamy friend. I am very glad to work with them. They make my dream come true. In my wedding  I found them as my best friends. ",
             "created_at": "2023-04-17T23:09:17.000000Z", "updated_at": "2023-04-17T23:13:35.000000Z"
         }])
         setPriceDescription([
@@ -306,7 +306,7 @@ function Home(api) {
                                                                                     <div className="ab-shape">
                                                                                         <img
                                                                                             decoding="async"
-                                                                                            src="./images/IMG_20230416_210803_516.png"
+                                                                                            src="./images/IMG_20230416_210803_516.webp"
                                                                                             alt=""
                                                                                         />
                                                                                     </div>
@@ -368,7 +368,7 @@ function Home(api) {
                                                 <div className="section-title-img">
                                                     <img
                                                         decoding="async"
-                                                        src="./images/preloader.png"
+                                                        src="./images/preloader.webp"
                                                         alt=""
                                                     />
                                                 </div>
@@ -467,7 +467,7 @@ function Home(api) {
                                                                                             <img
                                                                                                 width="55"
                                                                                                 height="63"
-                                                                                                src="./images/section-title-img-1.png"
+                                                                                                src="./images/section-title-img-1.webp"
                                                                                                 className="attachment-full size-full"
                                                                                                 alt="a"
                                                                                                 decoding="async"
@@ -627,7 +627,7 @@ function Home(api) {
                                     className="elementor-element elementor-element-3a20ac9 elementor-widget elementor-widget-wpo-loveme_testimonial"
                                     data-id="3a20ac9"
                                     data-element_type="widget"
-                                    data-settings='{"testi_shape":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/testi-shape.png","id":453,"size":"","alt":"","source":"library"},"testi_couple":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/test-thumb.jpg","id":454,"size":"","alt":"","source":"library"},"testi_shape2":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/test-shape2.png","id":455,"size":"","alt":"","source":"library"}}'
+                                    data-settings='{"testi_shape":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/testi-shape.png","id":453,"size":"","alt":"","source":"library"},"testi_couple":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/test-thumb.webp","id":454,"size":"","alt":"","source":"library"},"testi_shape2":{"url":"http:\/\/wpocean.com\/wp\/loveme\/wp-content\/uploads\/2021\/10\/test-shape2.png","id":455,"size":"","alt":"","source":"library"}}'
                                     data-widget_type="wpo-loveme_testimonial.default">
                                     <div className="elementor-widget-container">
                                         <div className="wpo-testimonials-section">
@@ -651,7 +651,7 @@ function Home(api) {
                                                                                 <div className="wpo-testimonials-img">
                                                                                     <img
                                                                                         decoding="async"
-                                                                                        // src="./images/test-thumb.jpg"
+                                                                                        // src="./images/test-thumb.webp"
                                                                                         src={'/storage' + Element.image}
                                                                                         alt={Element.name}
                                                                                         title={Element.name}
@@ -659,7 +659,7 @@ function Home(api) {
                                                                                     <div className="wpo-testimonials-img-shape">
                                                                                         <img
                                                                                             decoding="async"
-                                                                                            src="./images/testi-shape.png"
+                                                                                            src="./images/testi-shape.webp"
                                                                                             //  src={api.api+'/storage' + Element.image}
                                                                                             alt={Element.name}
                                                                                             title={Element.name}
@@ -759,7 +759,7 @@ function Home(api) {
                                             <div className="wpo-testimonials-shape">
                                                 <img
                                                     decoding="async"
-                                                    src="./images/test-shape2.png"
+                                                    src="./images/test-shape2.webp"
                                                     alt=""
                                                 />
                                             </div>
@@ -798,7 +798,7 @@ function Home(api) {
                                                 <div className="section-title-img">
                                                     <img
                                                         decoding="async"
-                                                        src="./images/preloader.png"
+                                                        src="./images/preloader.webp"
                                                         alt=""
                                                     />
                                                 </div>
@@ -899,7 +899,7 @@ function Home(api) {
                                                     <span>
                                                         <img
                                                             decoding="async"
-                                                            src="./images/preloader.png"
+                                                            src="./images/preloader.webp"
                                                             alt=""
                                                         />
                                                     </span>
