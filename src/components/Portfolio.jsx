@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import '@fancyapps/fancybox/dist/jquery.fancybox.min.css';
 import '@fancyapps/fancybox/dist/jquery.fancybox.min.js';
+import { Helmet } from "react-helmet-async";
 
 function Portfolio(api) {
   const [portfolio, setPortfolio] = useState([])
@@ -72,7 +73,9 @@ function Portfolio(api) {
   return (
     <div
       className="elementor elementor-16 mt-2" data-elementor-id="16" data-elementor-type="wp-page">
-
+      <Helmet>
+        <title>youhnaa magdy | Portfolio</title>
+      </Helmet>
       {/* Wedding Ceremony */}
       <section
         className="section-padding pt-3 mb-3 elementor-section elementor-top-section elementor-element elementor-element-3883d4e elementor-section-full_width elementor-section-height-default elementor-section-height-default"
@@ -124,10 +127,10 @@ function Portfolio(api) {
                               <div className='col-sm-6 col-md-3 col-lg-2 p-2' key={index}>
                                 <a data-fancybox="gallery"
                                   data-caption={Element.category}
-                                  href={ '/storage' + Element.image} alt={Element.title}>
+                                  href={'/storage' + Element.image} alt={Element.title}>
                                   <div className="grid w-100 ps-0 pe-0">
                                     <div className="img-holder">
-                                      <img src={ '/storage' + Element.image} alt={Element.title} title={Element.title} decoding="async" className="img img-responsive" />
+                                      <img src={'/storage' + Element.image} alt={Element.title} title={Element.title} decoding="async" className="img img-responsive" />
                                       <div className="hover-content">
                                         <h4>
                                           <a href="https://wpocean.com/wp/loveme/project/rose-harry/">

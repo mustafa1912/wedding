@@ -1,8 +1,13 @@
 import React from 'react'
+// Helmet
+import { Helmet } from 'react-helmet-async'
 
 function About() {
     return (
         <React.Fragment>
+            <Helmet>
+                <title>youhnaa magdy | about</title>
+            </Helmet>
             <div className="eltdf-content elementor-2145 elementor elementor-1860">
                 <div className="eltdf-content-inner">
                     <div className="eltdf-full-width">

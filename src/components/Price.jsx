@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 //const axios = require('axios'); // legacy way
 import axios from 'axios';
+import { Helmet } from "react-helmet-async";
 
 function Price(api) {
     const [price, setPrice] = useState([])
@@ -84,6 +85,9 @@ function Price(api) {
 
     return (
         <React.Fragment>
+            <Helmet>
+                <title>youhnaa magdy | packages</title>
+            </Helmet>
             <div className="eltdf-content elementor-2145 elementor elementor-1860">
                 <div className="eltdf-content-inner">
                     <div className="eltdf-full-width">

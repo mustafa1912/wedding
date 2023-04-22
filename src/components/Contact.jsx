@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+// Helmet
+import { Helmet } from "react-helmet-async";
 //const axios = require('axios'); // legacy way
 import axios from 'axios';
 
@@ -26,9 +28,11 @@ function Contact(api) {
 
   return (
     <React.Fragment>
+      <Helmet>
+        <title>youhnaa magdy | contact</title>
+      </Helmet>
       <div className="eltdf-content">
         <div className="eltdf-content-inner">
-
           <div className="eltdf-container eltdf-default-page-template">
             <div className="eltdf-container-inner clearfix pb-0">
               <div className="eltdf-grid-row">

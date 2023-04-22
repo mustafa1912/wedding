@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+// Helmet
+import { Helmet } from "react-helmet-async";
 //const axios = require('axios'); // legacy way
 import axios from 'axios';
 // OwlCarousel
@@ -233,6 +235,9 @@ function Home(api) {
 
     return (
         <React.Fragment>
+            <Helmet>
+                <title>youhnaa magdy | home</title>
+            </Helmet>
             <div
                 className="elementor elementor-16 mt-2" data-elementor-id="16" data-elementor-type="wp-page">
                 {/* main */}
@@ -359,7 +364,7 @@ function Home(api) {
                                     <div className="elementor-widget-container mt-5">
                                         <div className="wpo-section-area">
                                             <div className="wpo-section-title">
-                                                 <h2>Every picture tells a story</h2>
+                                                <h2>Every picture tells a story</h2>
                                                 <div className="section-title-img">
                                                     <img
                                                         decoding="async"
