@@ -216,7 +216,7 @@ function Price(api) {
                                                                                                                 {Element.name}
                                                                                                             </span>
                                                                                                         </li>
-                                                                                                        <div className="row m-0 align-items-end mt-3">
+                                                                                                        <div className="row m-0 align-items-center mt-3">
                                                                                                             <li
                                                                                                                 className="eltdf-pt-content col-7 pe-1">
                                                                                                                 {priceDescription.map((ElementDescription, indexDescription) => (
