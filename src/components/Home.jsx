@@ -633,7 +633,7 @@ function Home(api) {
                                             <div className="wpo-testimonials-shape">
                                                 <img
                                                     decoding="async"
-                                                    src="./images/test-shape2.webp"
+                                                    src="./images/test-shape2.png"
                                                     alt=""
                                                 />
                                             </div>
