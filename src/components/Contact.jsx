@@ -70,7 +70,7 @@ function Contact(api) {
                                       data-element_type="widget"
                                       data-widget_type="eltdf_section_title.default"
                                     >
-                                      <div className="elementor-widget-container">
+                                      <div className="elementor-widget-container p-0">
                                         <div
                                           className="eltdf-section-title-holder eltdf-st-standard eltdf-section-title-appeared"
                                           style={{ textAlign: "left" }}

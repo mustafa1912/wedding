@@ -163,7 +163,7 @@ function Price(api) {
                                                                                                                 {Element.name}
                                                                                                             </span>
                                                                                                         </li>
-                                                                                                        <div className="row m-0 align-items-center mt-3">
+                                                                                                        <div className="row m-0 align-items-end mt-3">
                                                                                                             <li
                                                                                                                 className="eltdf-pt-content col-7 pe-1">
                                                                                                                 {priceDescription.map((ElementDescription, indexDescription) => (
@@ -180,7 +180,7 @@ function Price(api) {
                                                                                                             <li
                                                                                                                 className="eltdf-pt-content col-5 pe-0">
                                                                                                                 <li className="eltdf-pt-prices">
-                                                                                                                    <div className='d-flex justify-content-center align-items-end mt-3'>
+                                                                                                                    <div className='d-flex justify-content-start align-items-end mt-3'>
                                                                                                                         {Element.discount * 1 !== 0 ?
                                                                                                                             <div className='offer-rate'>
                                                                                                                                 {Element.discount}%
@@ -203,7 +203,7 @@ function Price(api) {
                                                                                                         </div>
                                                                                                     </ul>
                                                                                                     <div className=" me-2 ms-2">
-                                                                                                        <p className='text-center p-2 mb-0 text pb-0'> plase check the notes show in the laste page</p>
+                                                                                                        <p className='text-center p-2 mb-0 text pb-0'>please check the notes show in the last page</p>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
