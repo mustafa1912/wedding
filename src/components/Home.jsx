@@ -21,194 +21,68 @@ function Home(api) {
 
     useEffect(() => {
         // slider
-        // axios.get(`${api.api}/api/slider`)
-        //     .then(function (response) {
-        //         // handle success
-        //         setSlider(response.data)
-        //     })
-        //     .catch(function (error) {
-        //         // handle error
-        //         console.log(error);
-        //     })
+        axios.get(`${api.api}/api/slider`)
+            .then(function (response) {
+                // handle success
+                setSlider(response.data)
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
         // Portfolio
-        // axios.get(`${api.api}/api/Portfolio`)
-        //     .then(function (response) {
-        //         // handle success
-        //         setPortfolio(response.data)
-        //     })
-        //     .catch(function (error) {
-        //         // handle error
-        //         console.log(error);
-        //     })
+        axios.get(`${api.api}/api/Portfolio`)
+            .then(function (response) {
+                // handle success
+                setPortfolio(response.data)
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
         // price
-        // axios.get(`${api.api}/api/Price`)
-        //     .then(function (response) {
-        //         // handle success
-        //         setPrice(response.data)
-        //     })
-        //     .catch(function (error) {
-        //         // handle error
-        //         console.log(error);
-        //     })
+        axios.get(`${api.api}/api/Price`)
+            .then(function (response) {
+                // handle success
+                setPrice(response.data)
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
         // price description
-        // axios.get(`${api.api}/api/description`)
-        //     .then(function (response) {
-        //         // handle success
-        //         setPriceDescription(response.data)
-        //         console.log(priceDescription)
+        axios.get(`${api.api}/api/description`)
+            .then(function (response) {
+                // handle success
+                setPriceDescription(response.data)
+                console.log(priceDescription)
 
-        //     })
-        //     .catch(function (error) {
-        //         // handle error
-        //         console.log(error);
-        //     })
-        // // Client
-        // axios.get(`${api.api}/api/client`)
-        //     .then(function (response) {
-        //         // handle success
-        //         setClient(response.data)
-        //     })
-        //     .catch(function (error) {
-        //         // handle error
-        //         console.log(error);
-        //     })
-        // // Team
-        // axios.get(`${api.api}/api/team`)
-        //     .then(function (response) {
-        //         // handle success
-        //         setTeam(response.data)
-        //     })
-        //     .catch(function (error) {
-        //         // handle error
-        //         console.log(error);
-        //     })
-        setSlider([
-            {
-                "address": "Efficiency", "image": "/76avRXe1zE2PDUY1SyceQBbLIvHmBjrwPn0jvyN3.webp",
-                "notes": "Capture beautiful moments and minute details of special events.",
-                "id": 1, "created_at": "2023-04-17T23:26:01.000000Z", "updated_at": "2023-04-17T23:26:01.000000Z"
-            },
-            {
-                "address": "the quality", "image": "/Kk8sB4D0q1x3uFd4Qwof8xIWAp2wEZ5H4j5aLVj0.webp",
-                "notes": "We use high quality images to showcase the latest work of our photographers",
-                "id": 2, "created_at": "2023-04-17T23:26:53.000000Z", "updated_at": "2023-04-17T23:26:53.000000Z"
-            }])
-        setPortfolio(
-            [{
-                "id": 10, "main_address": "american garden halls", "image": "/bq6UAL1vS82ZlqArnj6ZaitNZsYSTZvDe9gENWTt.webp", "category":
-                    "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:31:07.000000Z", "updated_at": "2023-04-17T22:31:07.000000Z"
-            },
-            {
-                "id": 11, "main_address": "american garden halls", "image": "/2irHvMzIpA1MKmjn2fHwVUxFGVzTw53Gf2jxwlp7.webp",
-                "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:31:29.000000Z", "updated_at": "2023-04-17T22:31:29.000000Z"
-            },
-            {
-                "id": 12, "main_address": "american garden halls", "image": "/Tuj3Yx0HII3FyJrMePW9dimFqZbrCGW7zFV4YdII.webp", "category": "Mina & Mariam",
-                "date": "2023-02-01", "created_at": "2023-04-17T22:31:42.000000Z", "updated_at": "2023-04-17T22:31:42.000000Z"
-            }, {
-                "id": 13, "main_address": "american garden halls",
-                "image": "/1Q3na6qQYa2VG7ChcMR6q89y6rGkdIYfzPtxeBV6.webp", "category": "Mina & Mariam", "date":
-                    "2023-02-01", "created_at": "2023-04-17T22:31:57.000000Z", "updated_at": "2023-04-17T22:31:57.000000Z"
-            }, {
-                "id": 14,
-                "main_address": "american garden halls", "image": "/e6rhP9bLw5Hp4e2cuRBOfixngZjUptEehNU3npn8.webp", "category":
-                    "Mina & Mariam", "date": "2023-02-18", "created_at": "2023-04-17T22:32:18.000000Z", "updated_at": "2023-04-17T22:32:18.000000Z"
-            },
-            {
-                "id": 15, "main_address": "american garden halls", "image": "/MrLKA6mRB320u1RGXfUmvn0nS3vwILw5H5ML4j8Z.webp",
-                "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:32:37.000000Z", "updated_at": "2023-04-17T22:32:37.000000Z"
-            },
-            {
-                "id": 16, "main_address": "american garden halls", "image": "/bTiZesbFlkOdWWD03VUqQwKruE5boOReUfJPDFdu.webp", "category": "Mina & Mariam",
-                "date": "2023-02-01", "created_at": "2023-04-17T22:32:50.000000Z", "updated_at": "2023-04-17T22:32:50.000000Z"
-            }, {
-                "id": 17, "main_address": "american garden halls",
-                "image": "/NurS9fkwdZkSQHA7TFhFvimXVGSVPG9xxHvS4GGX.webp", "category": "Mina & Mariam", "date": "2023-02-01",
-                "created_at": "2023-04-17T22:33:00.000000Z", "updated_at": "2023-04-17T22:33:00.000000Z"
-            }, {
-                "id": 18, "main_address": "american garden halls",
-                "image": "/2NhLotdflxk7MgoLa9zAkNl49o6ewRd1HwKyT4yw.webp", "category": "Mina & Mariam", "date": "2023-02-01", "created_at": "2023-04-17T22:33:16.000000Z", "updated_at": "2023-04-17T22:33:16.000000Z"
-            }, {
-                "id": 19, "main_address": "american garden halls",
-                "image": "/emD65nonXdWxcvU8mNzIsHe1MD1FuXkEjH4mfFHz.webp", "category": "Mina & Mariam", "date": "2023-04-01",
-                "created_at": "2023-04-17T22:33:29.000000Z", "updated_at": "2023-04-17T22:33:29.000000Z"
-            }, {
-                "id": 20, "main_address": "american garden halls",
-                "image": "/xabQoD20EaIVMWJgyNLAiKUFSaHPB5odd3Nqw1D7.webp", "category": "Mina & Mariam", "date": "2023-04-01", "created_at":
-                    "2023-04-17T22:34:56.000000Z", "updated_at": "2023-04-17T22:34:56.000000Z"
-            }, {
-                "id": 21, "main_address": "daba"
-                , "image": "/WvQIjeIVHfUyMTOw6ieQDReLU9lPOxaX3RzqvGJH.webp", "category": "Andrew & Mariam", "date":
-                    "2023-03-20", "created_at": "2023-04-17T22:35:14.000000Z", "updated_at": "2023-04-17T22:35:14.000000Z"
-            }, { "id": 22, "main_address": "daba", "image": "/hv2XJ4MMLMKbLYf9IaUrE8qK8bgAyhSXrnP7gWv3.webp", "category": "Andrew & Mariam", "date": "2023-03-20", "created_at": "2023-04-17T22:35:28.000000Z", "updated_at": "2023-04-17T22:35:28.000000Z" }, { "id": 23, "main_address": "florenta location", "image": "/WwR6Cb47gDn4vJ4SfjQyWj7FqrSTBja1f3VJvhxR.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:36:29.000000Z", "updated_at": "2023-04-17T22:36:29.000000Z" }, { "id": 24, "main_address": "florenta location", "image": "/OzR48daoKPGWRSIzcufK9B1pTa3OzRBfovcs3Rv0.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:36:44.000000Z", "updated_at": "2023-04-17T22:36:44.000000Z" }, { "id": 25, "main_address": "florenta location", "image": "/DwTUuD6Bzpdu8S4w5ZwOE6hiPLz460ZytHFBczC1.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:00.000000Z", "updated_at": "2023-04-17T22:37:00.000000Z" }, { "id": 26, "main_address": "florenta location", "image": "/u05lGMcFigWa1bxtLgrhDe0RURnqBMnreIccRSIN.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:18.000000Z", "updated_at": "2023-04-17T22:37:18.000000Z" }, { "id": 27, "main_address": "florenta location", "image": "/8xLICFlZO0srLk8krl55t9CSpitbp3b2AISsLYLi.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:34.000000Z", "updated_at": "2023-04-17T22:37:34.000000Z" }, { "id": 28, "main_address": "florenta location", "image": "/IMCtFe2OZNYvpyqDiaeS6iz51goLZk1II9RtBEdZ.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:37:47.000000Z", "updated_at": "2023-04-17T22:37:47.000000Z" }, { "id": 29, "main_address": "florenta location", "image": "/5R8cRqv30y0leE5iLzD2lUFDCpN3oc4cKvAWsAfJ.webp", "category": "wassiem & eva", "date": "2023-02-03", "created_at": "2023-04-17T22:38:11.000000Z", "updated_at": "2023-04-17T22:38:11.000000Z" }, { "id": 30, "main_address": "florenta location", "image": "/RJpItLrcabYJQQ0dL2F4N5i8KEeIns4kHCwRhcTz.webp", "category": "mikhael & marina", "date": "2023-01-01", "created_at": "2023-04-17T22:39:11.000000Z", "updated_at": "2023-04-17T22:39:11.000000Z" }]
-        )
-        setPrice([
-            {
-                "id": 1, "image": "/wETS3GyqFwJGIYs9y8uOZrwIwiL5doP6bceYVl97.webp",
-                "name": 'Halfday ', "price": "  3000", "discount": "0", "discount_percentage": null, "notes":
-                    null, "details": null, "created_at": "2023-04-17T22:18:07.000000Z", "updated_at":
-                    "2023-04-17T22:18:07.000000Z"
-            }, {
-                "id": 2, "image": "/lwnGyg1u9tkD9Nx2T2uyVVAEY7Y3hhvkYGIm491v.webp",
-                "name": 'Fullday', "price": "4000", "discount": "0", "discount_percentage": null, "notes": null, "details": null, "created_at":
-                    "2023-04-17T22:19:31.000000Z", "updated_at": "2023-04-17T22:19:31.000000Z"
-            },
-            {
-                "id": 3, "image": "/emEahvSsTahrOMq6uAf0LTtt0nAChEqDoXHVxZRU.webp", "name": 'Fullday plus ',
-                "price": "  7000", "discount": "0", "discount_percentage": null, "notes": null, "details": null,
-                "created_at": "2023-04-17T22:20:50.000000Z", "updated_at": "2023-04-17T22:20:50.000000Z"
-            }])
-        setClient([{ "id": 1, "image": "/JTyXLm6te1BVzv8uPApkJg2YgLeGQ9avxW3tw6Xh.webp", "name": "mikhael & marina", "address": "0", "notes": "This is not only a wedding planning agency but also a dreamy friend. I am very glad to work with them. They make my dream come true. In my wedding  I found them as my best friends. ", "created_at": "2023-04-17T23:07:07.000000Z", "updated_at": "2023-04-17T23:13:21.000000Z" }, { "id": 2, "image": "/DsBi6eKXOLIcf2pseOgp9sVruGToAqCiMLE8g5kj.webp", "name": "Andrew & Mariam", "address": "0", "notes": "Andrew & Mariam", "created_at": "2023-04-17T23:08:13.000000Z", "updated_at": "2023-04-17T23:13:29.000000Z" }, {
-            "id": 3, "image": "/BtqaJvRy1Psieb1HjM6U0aymu2ufIN5vmtn197lL.webp", "name": "wassiem & eva", "address": "", "notes": "This is not only a wedding planning agency but also a dreamy friend. I am very glad to work with them. They make my dream come true. In my wedding  I found them as my best friends. ",
-            "created_at": "2023-04-17T23:09:17.000000Z", "updated_at": "2023-04-17T23:13:35.000000Z"
-        }])
-        setPriceDescription([
-            {
-                "id": 1, "price_id": 1, "notes": "One photographer", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            },
-            {
-                "id": 2, "price_id": 1, "notes": "Photosession", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            },
-            {
-                "id": 3, "price_id": 1, "notes": "Curch shoots(for ch)", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-            ,
-            {
-                "id": 4, "price_id": 2, "notes": "2 photographer", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            },
-            {
-                "id": 5, "price_id": 2, "notes": "Preparation shoots", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            },
-            {
-                "id": 6, "price_id": 2, "notes": "Photosession", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            },
-            {
-                "id": 7, "price_id": 2, "notes": "Curch shoots(for ch)", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-            ,
-            {
-                "id": 8, "price_id": 3, "notes": "2 photographer", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            },
-            {
-                "id": 9, "price_id": 3, "notes": "Promo video", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-            ,
-            {
-                "id": 10, "price_id": 3, "notes": "Preparation shoots ", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-            ,
-            {
-                "id": 11, "price_id": 3, "notes": "Photosession ", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-            ,
-            {
-                "id": 12, "price_id": 3, "notes": "Curch shoots(for ch)", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-            ,
-            {
-                "id": 13, "price_id": 3, "notes": "Party shoots", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-        ])
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+        // Client
+        axios.get(`${api.api}/api/client`)
+            .then(function (response) {
+                // handle success
+                setClient(response.data)
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+        // Team
+        axios.get(`${api.api}/api/team`)
+            .then(function (response) {
+                // handle success
+                setTeam(response.data)
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+
     }, [])
 
     const options_reviews = {
@@ -275,7 +149,7 @@ function Home(api) {
                                                                                         <div className="wpo-about-img">
                                                                                             <img
                                                                                                 decoding="async"
-                                                                                                src={'/storage' + Element.image}
+                                                                                                src={api.api+'/storage/app/public/' + Element.image}
                                                                                                 alt={Element.address}
                                                                                                 title={Element.address}
                                                                                             />
@@ -296,7 +170,7 @@ function Home(api) {
                                                                                             <div className="wpo-about-img 00">
                                                                                                 <img
                                                                                                     decoding="async"
-                                                                                                    src={'/storage' + Element.image}
+                                                                                                    src={api.api+'/storage/app/public/' + Element.image}
                                                                                                     alt={Element.address}
                                                                                                     title={Element.address}
                                                                                                 />
@@ -395,7 +269,7 @@ function Home(api) {
                                                                         <div className="col-sm-6 col-md-3 col-lg-2 p-2" >
                                                                             <div className="wpo-about-item-s2 mb-2">
                                                                                 <div className="wpo-about-img" >
-                                                                                    <div className="bg-img-portfolio" style={{ backgroundImage: `url('storage${Element.image}')` }}></div>
+                                                                                    <div className="bg-img-portfolio" style={{ backgroundImage: `url('${api.api}/storage/app/public/${Element.image}')` }}></div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -532,7 +406,7 @@ function Home(api) {
                                                                                                     <div className="img-price">
                                                                                                         <figure>
                                                                                                             <img
-                                                                                                                src={'/storage' + Element.image} className="w-100" decoding="async"
+                                                                                                                src={api.api+'/storage/app/public/' + Element.image} className="w-100" decoding="async"
                                                                                                                 alt={Element.name}
                                                                                                                 title={Element.name}
                                                                                                                 loading="lazy" />
@@ -652,7 +526,7 @@ function Home(api) {
                                                                                     <img
                                                                                         decoding="async"
                                                                                         // src="./images/test-thumb.webp"
-                                                                                        src={'/storage' + Element.image}
+                                                                                        src={api.api+'/storage/app/public/' + Element.image}
                                                                                         alt={Element.name}
                                                                                         title={Element.name}
                                                                                     />

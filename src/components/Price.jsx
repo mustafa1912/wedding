@@ -8,79 +8,26 @@ function Price(api) {
     const [priceDescription, setPriceDescription] = useState([])
     useEffect(() => {
         // price
-        // axios.get(`${api.api}/api/Price`)
-        //     .then(function (response) {
-        //         // handle success
-        //         setPrice(response.data)
-        //         console.log(price)
-        //     })
-        //     .catch(function (error) {
-        //         // handle error
-        //         console.log(error);
-        //     })
-        setPrice([
-            {
-                "id": 1, "image": "/wETS3GyqFwJGIYs9y8uOZrwIwiL5doP6bceYVl97.webp",
-                "name": 'Halfday ', "price": "  3000", "discount": "0", "discount_percentage": null, "notes":
-                    null, "details": null, "created_at": "2023-04-17T22:18:07.000000Z", "updated_at":
-                    "2023-04-17T22:18:07.000000Z"
-            }, {
-                "id": 2, "image": "/lwnGyg1u9tkD9Nx2T2uyVVAEY7Y3hhvkYGIm491v.webp",
-                "name": 'Fullday', "price": "4000", "discount": "0", "discount_percentage": null, "notes": null, "details": null, "created_at":
-                    "2023-04-17T22:19:31.000000Z", "updated_at": "2023-04-17T22:19:31.000000Z"
-            },
-            {
-                "id": 3, "image": "/emEahvSsTahrOMq6uAf0LTtt0nAChEqDoXHVxZRU.webp", "name": 'Fullday plus ',
-                "price": "  7000", "discount": "0", "discount_percentage": null, "notes": null, "details": null,
-                "created_at": "2023-04-17T22:20:50.000000Z", "updated_at": "2023-04-17T22:20:50.000000Z"
-            }])
-        setPriceDescription([
-            {
-                "id": 1, "price_id": 1, "notes": "One photographer", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            },
-            {
-                "id": 2, "price_id": 1, "notes": "Photosession", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            },
-            {
-                "id": 3, "price_id": 1, "notes": "Curch shoots(for ch)", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-            ,
-            {
-                "id": 4, "price_id": 2, "notes": "2 photographer", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            },
-            {
-                "id": 5, "price_id": 2, "notes": "Preparation shoots", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            },
-            {
-                "id": 6, "price_id": 2, "notes": "Photosession", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            },
-            {
-                "id": 7, "price_id": 2, "notes": "Curch shoots(for ch)", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-            ,
-            {
-                "id": 8, "price_id": 3, "notes": "2 photographer", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            },
-            {
-                "id": 9, "price_id": 3, "notes": "Promo video", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-            ,
-            {
-                "id": 10, "price_id": 3, "notes": "Preparation shoots ", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-            ,
-            {
-                "id": 11, "price_id": 3, "notes": "Photosession ", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-            ,
-            {
-                "id": 12, "price_id": 3, "notes": "Curch shoots(for ch)", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-            ,
-            {
-                "id": 13, "price_id": 3, "notes": "Party shoots", "created_at": "2023-04-17T22:18:07.000000Z", "updated_at": "2023-04-17T22:18:07.000000Z"
-            }
-        ])
+        axios.get(`${api.api}/api/Price`)
+            .then(function (response) {
+                // handle success
+                setPrice(response.data)
+                console.log(price)
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+        // setPriceDescription
+        axios.get(`${api.api}/api/description`)
+            .then(function (response) {
+                // handle success
+                setPriceDescription(response.data)
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
     }, [])
 
     return (
@@ -201,7 +148,7 @@ function Price(api) {
                                                                                                 <div className="img-price">
                                                                                                     <figure>
                                                                                                         <img
-                                                                                                            src={'/storage' + Element.image} className="w-100" decoding="async"
+                                                                                                            src={api.api+'/storage/app/public/' + Element.image} className="w-100" decoding="async"
                                                                                                             alt={Element.name}
                                                                                                             title={Element.name}
                                                                                                             loading="lazy" />
