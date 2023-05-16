@@ -168,7 +168,7 @@ function Price(api) {
                                                                                                                 className="eltdf-pt-content col-7 pe-1">
                                                                                                                 {priceDescription.map((ElementDescription, indexDescription) => (
                                                                                                                     <React.Fragment key={indexDescription}>
-                                                                                                                        {ElementDescription.price_id === Element.id ?
+                                                                                                                    {ElementDescription.price_id * 1 === Element.id * 1 ?
                                                                                                                             <React.Fragment>
                                                                                                                                 <ul >
                                                                                                                                     <li className="pe-0"> {ElementDescription.notes} </li>

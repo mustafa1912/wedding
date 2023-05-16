@@ -55,7 +55,7 @@ function Home(api) {
             .then(function (response) {
                 // handle success
                 setPriceDescription(response.data)
-                console.log(priceDescription)
+                console.log(response.data)
 
             })
             .catch(function (error) {
@@ -84,7 +84,7 @@ function Home(api) {
             })
 
     }, [])
-
+    console.log(priceDescription)
     const options_reviews = {
         // margin: 30,
         responsiveClass: true,
@@ -149,7 +149,7 @@ function Home(api) {
                                                                                         <div className="wpo-about-img">
                                                                                             <img
                                                                                                 decoding="async"
-                                                                                                src={api.api+'/storage/app/public/' + Element.image}
+                                                                                                src={api.api + '/storage/app/public/' + Element.image}
                                                                                                 alt={Element.address}
                                                                                                 title={Element.address}
                                                                                             />
@@ -170,7 +170,7 @@ function Home(api) {
                                                                                             <div className="wpo-about-img 00">
                                                                                                 <img
                                                                                                     decoding="async"
-                                                                                                    src={api.api+'/storage/app/public/' + Element.image}
+                                                                                                    src={api.api + '/storage/app/public/' + Element.image}
                                                                                                     alt={Element.address}
                                                                                                     title={Element.address}
                                                                                                 />
@@ -406,7 +406,7 @@ function Home(api) {
                                                                                                     <div className="img-price">
                                                                                                         <figure>
                                                                                                             <img
-                                                                                                                src={api.api+'/storage/app/public/' + Element.image} className="w-100" decoding="async"
+                                                                                                                src={api.api + '/storage/app/public/' + Element.image} className="w-100" decoding="async"
                                                                                                                 alt={Element.name}
                                                                                                                 title={Element.name}
                                                                                                                 loading="lazy" />
@@ -426,7 +426,7 @@ function Home(api) {
                                                                                                                     className="eltdf-pt-content col-7 pe-1">
                                                                                                                     {priceDescription.map((ElementDescription, indexDescription) => (
                                                                                                                         <React.Fragment key={indexDescription}>
-                                                                                                                            {ElementDescription.price_id === Element.id ?
+                                                                                                                            {ElementDescription.price_id * 1 === Element.id * 1 ?
                                                                                                                                 <React.Fragment>
                                                                                                                                     <ul >
                                                                                                                                         <li className="pe-0"> {ElementDescription.notes} </li>
@@ -526,7 +526,7 @@ function Home(api) {
                                                                                     <img
                                                                                         decoding="async"
                                                                                         // src="./images/test-thumb.webp"
-                                                                                        src={api.api+'/storage/app/public/' + Element.image}
+                                                                                        src={api.api + '/storage/app/public/' + Element.image}
                                                                                         alt={Element.name}
                                                                                         title={Element.name}
                                                                                     />
