@@ -83,7 +83,7 @@ function Portfolio(api) {
                                   <div className="grid w-100 ps-0 pe-0">
                                     <div className="img-holder">
                                       <img src={api.api + '/storage/app/public/' + Element.image}
-                                        alt={Element.title} title={Element.title} decoding="async" className="img img-responsive" />
+                                        alt={Element.title} title={Element.title} decoding="async" className="img bg-img-portfolio" />
                                       <div className="hover-content">
                                         <h4>
                                           <a href="#s" rel="nofllow">

@@ -148,7 +148,7 @@ function Price(api) {
                                                                                                 <div className="img-price">
                                                                                                     <figure>
                                                                                                         <img
-                                                                                                            src={api.api+'/storage/app/public/' + Element.image} className="w-100" decoding="async"
+                                                                                                            src={api.api + '/storage/app/public/' + Element.image} className="w-100" decoding="async"
                                                                                                             alt={Element.name}
                                                                                                             title={Element.name}
                                                                                                             loading="lazy" />
@@ -168,7 +168,7 @@ function Price(api) {
                                                                                                                 className="eltdf-pt-content col-7 pe-1">
                                                                                                                 {priceDescription.map((ElementDescription, indexDescription) => (
                                                                                                                     <React.Fragment key={indexDescription}>
-                                                                                                                    {ElementDescription.price_id * 1 === Element.id * 1 ?
+                                                                                                                        {ElementDescription.price_id * 1 === Element.id * 1 ?
                                                                                                                             <React.Fragment>
                                                                                                                                 <ul >
                                                                                                                                     <li className="pe-0"> {ElementDescription.notes} </li>
@@ -209,6 +209,18 @@ function Price(api) {
                                                                                             </div>
                                                                                         </div>
                                                                                     ))}
+                                                                                    <div
+                                                                                        className="eltdf-price-table eltdf-item-space col-sm-12 col-md-4 " >
+                                                                                        <div className="eltdf-pt-inner">
+                                                                                            <div className="">
+                                                                                                <figure>
+                                                                                                    <img
+                                                                                                        src="./images/notes.jpg" className="mt-2 w-100" alt="notes" title='notes' decoding="async"
+                                                                                                        loading="lazy" />
+                                                                                                </figure>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>

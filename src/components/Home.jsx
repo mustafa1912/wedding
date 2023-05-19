@@ -467,6 +467,18 @@ function Home(api) {
                                                                                                 </div>
                                                                                             </div>
                                                                                         ))}
+                                                                                        <div
+                                                                                            className="eltdf-price-table eltdf-item-space col-sm-12 col-md-4 " >
+                                                                                            <div className="eltdf-pt-inner">
+                                                                                                <div className="">
+                                                                                                    <figure>
+                                                                                                        <img
+                                                                                                            src="./images/notes.jpg" className="mt-2 w-100" alt="notes" title='notes' decoding="async"
+                                                                                                            loading="lazy" />
+                                                                                                    </figure>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
